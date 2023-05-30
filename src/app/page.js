@@ -1,113 +1,257 @@
-import Image from 'next/image'
+import Image from 'next/image';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      <div class="container max-w-[1400px] mx-auto w-full">
+        <div
+          class="w-full h-screen"
+          style="background-image:url(/image/11.png); background-repeat: no-repeat; background-size: cover; background-position: center;"
+        >
+          <div class="text-center text-white ">
+            <h1 class="text-6xl max-sm:text-xl font-light sm:tracking-[3vh] tracking-[3vh]  pt-[75vh]   pb-4 ">
+              SUGARCOAT
+            </h1>
+            <P class="mb-6 font-light ">WE MAKE LIFE SWEETER</P>
+            <a href="#" class="px-10 py-3 text-black bg-white ">
+              BOOK AN APPOINTENT
+            </a>
+          </div>
         </div>
+
+        <div class="border-2 border-black mx-auto mt-40 py-20 max-w-[190vh] ">
+          <div class="grid grid-cols-2 px-20 max-sm:grid-cols-1">
+            <div class="mt-10 text-5xl font-light">
+              <h2>OUR VISION</h2>
+            </div>
+            <div class="mt-5">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                placeat, ab sit quidem quod perferendis perspiciatis, at eos,
+                qui maiores aspernatur asperiores natus tenetur? Inventore fugit
+                magnam quisquam quia deserunt? Lorem, ipsum dolor sit amet
+                consectetur adipisicing elit. Odio,
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-40 text-5xl font-light text-center">
+          <h2>OUR SERVICE</h2>
+        </div>
+        <div class="grid grid-cols-3 grid-rows-2 gap-10 px-10 mt-20 max-sm:grid-cols-1 max-md:grid-cols-2">
+          <div class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
+            <div>
+              <img src="/image/12.jfif" alt="" />
+            </div>
+            <div class="mt-4 text-center">
+              <h5>NAIL CARE</h5>
+              <h3 class="mt-5 text-2xl font-semibold">
+                MANICURES + <br /> PEDICURES
+              </h3>
+            </div>
+          </div>
+          <div class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
+            <div>
+              <img src="/image/12.jfif" alt="" />
+            </div>
+            <div class="mt-4 text-center">
+              <h5>NAIL CARE</h5>
+              <h3 class="mt-5 text-2xl font-semibold">
+                MANICURES + <br /> PEDICURES
+              </h3>
+            </div>
+          </div>
+          <div class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
+            <div>
+              <img src="/image/12.jfif" alt="" />
+            </div>
+            <div class="mt-4 text-center">
+              <h5>NAIL CARE</h5>
+              <h3 class="mt-5 text-2xl font-semibold">
+                MANICURES + <br /> PEDICURES
+              </h3>
+            </div>
+          </div>
+          <div class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
+            <div>
+              <img src="/image/12.jfif" alt="" />
+            </div>
+            <div class="mt-4 text-center">
+              <h5>NAIL CARE</h5>
+              <h3 class="mt-5 text-2xl font-semibold">
+                MANICURES + <br /> PEDICURES
+              </h3>
+            </div>
+          </div>
+          <div class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
+            <div>
+              <img src="/image/12.jfif" alt="" />
+            </div>
+            <div class="mt-4 text-center">
+              <h5>NAIL CARE</h5>
+              <h3 class="mt-5 text-2xl font-semibold">
+                MANICURES + <br /> PEDICURES
+              </h3>
+            </div>
+          </div>
+          <div class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
+            <div>
+              <img src="/image/12.jfif" alt="" />
+            </div>
+            <div class="mt-4 text-center">
+              <h5>NAIL CARE</h5>
+              <h3 class="mt-5 text-2xl font-semibold">
+                MANICURES + <br /> PEDICURES
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-10 px-10 mt-40 max-sm:grid-cols-1">
+          <div class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700 ">
+            <div class="text-4xl font-light text-center max-sm:text-lg">
+              <h2>
+                SUGARCOAT <br /> NAIL POLISHES
+              </h2>
+            </div>
+            <div class="mt-10 text-center">
+              <i class="fa-solid fa-leaf"></i>
+              <h3>ORGANIC</h3>
+            </div>
+            <div class="mt-10 text-center">
+              <i class="fa-solid fa-leaf"></i>
+              <h3>ORGANIC</h3>
+            </div>
+            <div class="mt-10 text-center">
+              <i class="fa-solid fa-leaf"></i>
+              <h3>ORGANIC</h3>
+            </div>
+          </div>
+          <div class="">
+            <img src="/image/images (1).jpeg" alt="" class="w-full h-96" />
+          </div>
+        </div>
+
+        <div class="mt-40 text-5xl text-center">
+          <h2>
+            CLIENT <br /> TESTIMONIALS
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-3 gap-20 px-10 max-sm:grid-cols-1 max-md:grid-cols-2">
+          <div class="mt-20 text-center ">
+            <hr class="border-black" />
+            <p class="mt-10">
+              "I LOVE GOING TO SUGARCOAT IN ATLANTA-THEIR MENU IS PERFECT. IF
+              I'M ON THE GO, I'LL POP IN FOR A QUICK EXPRESS MANICURE. ON DAYS
+              WHEN I HAVE TIME TO RELAX, I'LL PAMPER MYSELF WITH THEIR
+              SIGNAGTURE MANI-PEDI, COMPLETE WITH THE SALON'S SUGARCOAT SUGAR
+              SCRUB. PLUS, I LOVE THE PINK AND WHITE DECOR AT THE BUCKHEAD
+              LOCATION. IT'S VERY GIRLIE AND REMINDS ME OF THE SPANX OFFICES! "
+            </p>
+            <h4 class="mt-10 text-2xl">
+              SARA BLAKELY
+              <br />
+              FOUNDER OF SPANX ❤
+            </h4>
+          </div>
+          <div class="mt-20 text-center">
+            <hr class="border-black" />
+            <p class="mt-10">
+              "BOOST YOUR PRODUCT AND SERVICE'S CREDIBILITY BY ADDING
+              TESTIMONIALS FROM YOUR CLIENTS.
+              <br />
+              <br />
+              <br />
+              PEOPLE LOVE RECOMMENDATIONS SO FEEDBACK FROM OTHERS WHO'VE TRIED
+              IT IS INVALUABLE."
+            </p>
+            <h4 class="mt-10 text-2xl">
+              ERICA BOGART
+              <br />
+              AWARD WINNING MAKEUP ARTIST
+            </h4>
+          </div>
+          <div class="mt-20 text-center">
+            <hr class="border-black" />
+            <p class="mt-10">
+              "BOOST YOUR PRODUCT AND SERVICE'S CREDIBILITY BY ADDING
+              TESTIMONIALS FROM YOUR CLIENTS. FEEDBACK FROM OTHERS WHO'VE TRIED
+              IT IS INVALUABLE. "
+            </p>
+            <h4 class="mt-5 text-2xl">
+              BRENDA WOOD
+              <br />
+              NEWS ANCHOR
+            </h4>
+          </div>
+        </div>
+
+        <div class="w-full h-screen mt-20 bg-black">
+          <div class="pt-10 text-center text-white">
+            <h5 class="font-semibold">ABOUT THE BRAND</h5>
+            <h2 class="mt-20 font-light max-sm:text-3xl text-8xl max-md:text-6xl max-xl:text-8xl">
+              WE TAKE CARE OF <br /> OUR CLIENTS AND <br /> OUR PEOPLE.
+            </h2>
+            <p class="mt-8 ">
+              WE LOVE SERVING OUR COMMUNITY, WE STRIVE TO PROVIDE THE BEST{' '}
+              <br />
+              PRODUCTS AND SERVICES TO CREATE THE ULTIMATE BEAUTY OASIS FOR ALL{' '}
+              <br /> TO RELAX AND REJUVENATE
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="w-full h-screen"
+          style="background-image: url(/image/pexels-pixabay-263209.jpg); background-repeat: no-repeat; background-size: cover;"
+        >
+          <div class="w-full max-w-sm p-4 bg-white border border-gray-200  shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700 pt-10 absolute mt-10 right-0 right-20 h-[90vh] max-sm:left-0 ">
+            <div class="border-2 border-black h-[80vh]">
+              <div class="mt-10 text-center">
+                <h2 class="text-2xl">CONTACT US</h2>
+                <h5 class="mt-10 font-bold">PHONE</h5>
+                <p>(404)00080000</p>
+                <div class="mt-10">
+                  <h3 class="font-bold">EMAIL</h3>
+                  <p>HELLO@ SUGARCOATBEAUTY.COOM</p>
+                  <h3 class="mt-10 font-bold">SOCIAL</h3>
+                  <div class="mt-2 text-xl ">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                  </div>
+                  <div class="mt-20">
+                    <p>
+                      OUR SALONS ARE FULLY ACCESSIBLE. PLEASE REACH OUT FOR
+                      FURTHER ACCOMMODATIONS.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-5 grid-rows-2 gap-5 px-10 mt-20 logo max-sm:grid-cols-3 max-md:grid-cols-4">
+          <img src="/image/logo 1.jpeg" alt="" />
+          <img src="/image/logo2.png" alt="" />
+          <img src="/image/logo3.png" alt="" />
+          <img src="/image/logo5.jpeg" alt="" />
+          <img src="/image/logo6.jpeg" alt="" />
+          <img src="/image/logo2.png" alt="" />
+          <img src="/image/logo3.png" alt="" />
+          <img src="/image/logo 1.jpeg" alt="" />
+          <img src="/image/logo5.jpeg" alt="" />
+          <img src="/image/logo6.jpeg" alt="" />
+        </div>
+
+        <div
+          class="w-full h-screen mt-32 "
+          style=" background-image: url(/image/11.png); background-size: cover; background-position: center;"
+        ></div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+    </>
+  );
 }
