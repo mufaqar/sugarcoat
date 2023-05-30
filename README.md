@@ -1,4 +1,5 @@
 #sugarcoat
 #Fiver Project
 
-https://sugarcoatweb.vercel.app/
+https://sugarcoatweb.vercel.app
+#NextJs
