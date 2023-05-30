@@ -5,14 +5,14 @@ export default function Home() {
     <>
       <div class="container max-w-[1400px] mx-auto w-full">
         <div
-          class="w-full h-screen"
-          style="background-image:url(/image/11.png); background-repeat: no-repeat; background-size: cover; background-position: center;"
+          class="w-full h-screen bg-black"
+         
         >
           <div class="text-center text-white ">
             <h1 class="text-6xl max-sm:text-xl font-light sm:tracking-[3vh] tracking-[3vh]  pt-[75vh]   pb-4 ">
               SUGARCOAT
             </h1>
-            <P class="mb-6 font-light ">WE MAKE LIFE SWEETER</P>
+            <p class="mb-6 font-light ">WE MAKE LIFE SWEETER</p>
             <a href="#" class="px-10 py-3 text-black bg-white ">
               BOOK AN APPOINTENT
             </a>
@@ -204,8 +204,8 @@ export default function Home() {
         </div>
 
         <div
-          class="w-full h-screen"
-          style="background-image: url(/image/pexels-pixabay-263209.jpg); background-repeat: no-repeat; background-size: cover;"
+          class="w-full h-screen bg-red-500"
+       
         >
           <div class="w-full max-w-sm p-4 bg-white border border-gray-200  shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700 pt-10 absolute mt-10 right-0 right-20 h-[90vh] max-sm:left-0 ">
             <div class="border-2 border-black h-[80vh]">
@@ -248,8 +248,7 @@ export default function Home() {
         </div>
 
         <div
-          class="w-full h-screen mt-32 "
-          style=" background-image: url(/image/11.png); background-size: cover; background-position: center;"
+          class="w-full h-screen mt-32 bg-green-400 "
         ></div>
       </div>
     </>
