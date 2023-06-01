@@ -5,12 +5,12 @@ export default function Home() {
     <>
       <div className="">
         {/* main section */}
-        <main className="w-full h-screen bg-[url('/images/11.png')] bg-no-repeat bg-cover border-b-[1px] border-gray-200">
+        <main className="w-full h-screen bg-[url('/images/11.png')] bg-no-repeat bg-cover bg-center border-b-[1px] border-gray-200">
           <div className="text-center text-white flex flex-col justify-end items-center h-screen px-4">
-            <h1 className="text-6xl font-kammerlander max-sm:text-xl font-light sm:tracking-[3vh] tracking-[3vh] pb-4 ">
+            <h1 className=" text-4xl md:text-6xl font-kammerlander font-light sm:tracking-[3vh] tracking-[16px] pb-3 ">
               SUGARCOAT
             </h1>
-            <p className="mb-6 font-light font-boxley">WE MAKE LIFE SWEETER</p>
+            <p className="mb-4 font-light md:text-xl font-boxley tracking-[6px]">WE MAKE LIFE SWEETER</p>
             <a href="#" className="px-10 font-boxley mb-[1px] py-3 text-black bg-white ">
               BOOK AN APPOINTENT
             </a>
@@ -18,19 +18,15 @@ export default function Home() {
         </main>
 
         <section className="px-4 mt-40 ">
-          <div className="grid grid-cols-2 px-12 md:px-20 max-sm:grid-cols-1 border-2 border-black mx-auto py-20 container ">
-            <div className="mt-10 text-5xl font-light">
-              <h2 className="font-kammerlander">OUR VISION</h2>
-            </div>
-            <div className="mt-5">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-                placeat, ab sit quidem quod perferendis perspiciatis, at eos,
-                qui maiores aspernatur asperiores natus tenetur? Inventore fugit
-                magnam quisquam quia deserunt? Lorem, ipsum dolor sit amet
-                consectetur adipisicing elit. Odio,
-              </p>
-            </div>
+          <div className="flex items-center flex-col md:flex-row px-12 md:px-20 border py-28 gap-12 md:gap-40 border-black mx-auto container">
+            <h2 className="font-kammerlander text-5xl font-light md:max-w-[400px] w-full">OUR VISION</h2>
+            <p className="font-boxley">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+              placeat, ab sit quidem quod perferendis perspiciatis, at eos,
+              qui maiores aspernatur asperiores natus tenetur? Inventore fugit
+              magnam quisquam quia deserunt? Lorem, ipsum dolor sit amet
+              consectetur adipisicing elit. Odio,
+            </p>
           </div>
         </section>
 
@@ -144,7 +140,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="w-full py-20 mt-20 bg-black">
+        <div className="w-full py-20 mt-20 bg-[#252427]">
           <div className="pt-10 text-center text-white">
             <h5 className="font-semibold font-boxley">ABOUT THE BRAND</h5>
             <h2 className="mt-20 font-light sm:text-3xl text-2xl md:text-6x xl:text-8xl font-kammerlander">
@@ -159,8 +155,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="w-full flex justify-center flex-col px-4 items-end py-20 bg-[url('/images/office.jpg')] bg-no-repeat bg-cover">
-          <div className= "p-4 max-w-[400px] bg-white m-auto md:mr-20">
+        <div className="w-full flex justify-center flex-col px-4 items-end py-20 bg-[url('/images/Contact-BG_Atlanta.jpg')] bg-no-repeat bg-cover">
+          <div className= "p-4 max-w-[440px] bg-white m-auto md:mr-20">
             <div className="border border-black p-6">
               <div className="mt-10 text-center">
                 <h2 className="text-4xl font-kammerlander">CONTACT US</h2>
@@ -187,7 +183,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="grid grid-cols-5 grid-rows-2 gap-5 container mx-auto px-10 mt-20 logo max-sm:grid-cols-3 max-md:grid-cols-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 container mx-auto px-10 mt-20 logo">
           <figure className="flex justify-center items-center"><img src="/images/logo 1.jpeg" alt="" /></figure>
           <figure className="flex justify-center items-center"><img src="/images/logo2.png" alt="" /></figure>
           <figure className="flex justify-center items-center"><img src="/images/logo3.png" alt="" /></figure>
@@ -200,7 +196,7 @@ export default function Home() {
           <figure className="flex justify-center items-center"><img src="/images/logo6.jpeg" alt="" /></figure>
         </div>
 
-        <div className="w-full h-screen mt-20 bg-[url('/images/11.png')] bg-no-repeat bg-cover "/>
+        <div className="w-full h-screen mt-20 bg-[url('/images/11.png')] bg-no-repeat bg-center bg-cover "/>
       </div>
     </>
   );
