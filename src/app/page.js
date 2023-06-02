@@ -75,11 +75,7 @@ export default function Home() {
               OUR VISION
             </h2>
             <p className="font-boxley">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-              placeat, ab sit quidem quod perferendis perspiciatis, at eos, qui
-              maiores aspernatur asperiores natus tenetur? Inventore fugit
-              magnam quisquam quia deserunt? Lorem, ipsum dolor sit amet
-              consectetur adipisicing elit. Odio,
+            Our vision is to create the ultimate beauty destination. A one stop shop for nails, lashes, hair care, and all things beauty. Sugarcoat Beauty is modern, elegant, and pristine. We aim to provide the most luxurious beauty experience.
             </p>
           </div>
         </section>
