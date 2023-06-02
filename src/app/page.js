@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Services } from "../../public/servises-data";
 
 export default function Home() {
   return (
@@ -34,7 +35,7 @@ export default function Home() {
           <h2 className="font-kammerlander">OUR SERVICE</h2>
         </div>
         <div className="grid grid-cols-1 gap-10 px-10 mt-20 sm:grid-cols-2 lg:grid-cols-3 container mx-auto">
-          {[1, 2, 3, 4, 5, 6].map((item, idx) => {
+          {Services.map((item, idx) => {
             return (
               <div
                 className="w-full p-5 bg-white border border-black"
@@ -42,15 +43,15 @@ export default function Home() {
               >
                 <div>
                   <img
-                    src="/images/eye.png"
-                    alt=""
-                    className="border border-black"
+                    src={item?.image}
+                    alt={item?.name}
+                    className="border border-black w-full"
                   />
                 </div>
                 <div className="mt-4 text-center">
-                  <h5 className="font-boxley font-light text-2xl">NAIL CARE</h5>
-                  <h3 className="mt-5 text-2xl lg:text-4xl font-semibold font-kammerlander">
-                    MANICURES + PEDICURES
+                  <h5 className="font-boxley font-light text-lg">{item?.tag}</h5>
+                  <h3 className="mt-5 text-2xl lg:text-3xl font-semibold font-kammerlander">
+                    {item?.name}
                   </h3>
                 </div>
               </div>
@@ -183,17 +184,17 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 container mx-auto px-10 mt-20 logo">
-          <figure className="flex justify-center items-center"><img src="/images/logo 1.jpeg" alt="" /></figure>
-          <figure className="flex justify-center items-center"><img src="/images/logo2.png" alt="" /></figure>
-          <figure className="flex justify-center items-center"><img src="/images/logo3.png" alt="" /></figure>
-          <figure className="flex justify-center items-center"><img src="/images/logo5.jpeg" alt="" /></figure>
-          <figure className="flex justify-center items-center"><img src="/images/logo6.jpeg" alt="" /></figure>
-          <figure className="flex justify-center items-center"><img src="/images/logo2.png" alt="" /></figure>
-          <figure className="flex justify-center items-center"><img src="/images/logo3.png" alt="" /></figure>
-          <figure className="flex justify-center items-center"><img src="/images/logo 1.jpeg" alt="" /></figure>
-          <figure className="flex justify-center items-center"><img src="/images/logo5.jpeg" alt="" /></figure>
-          <figure className="flex justify-center items-center"><img src="/images/logo6.jpeg" alt="" /></figure>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 container mx-auto px-10 mt-20 logo">
+          <figure className="flex justify-center items-center"><img src="/images/Jezebel_Best_of Atlanta_2023_SugarcoatBeauty.jpg" alt="" /></figure>
+          <figure className="flex justify-center items-center"><img src="/images/Atlantan_Best_The_City_Winner_SugarcoatBeauty.jpg" alt="" /></figure>
+          <figure className="flex justify-center items-center"><img src="/images/Atlanta_Best_Of_ATL_SugarcoatBeauty.jpg" alt="" /></figure>
+          <figure className="flex justify-center items-center"><img src="/images/Jezebel_Best_of_Atlanta_2021_Winner_SugarcoatBeauty.jpg" alt="" /></figure>
+          <figure className="flex justify-center items-center"><img src="/images/Best_2018_Winner_SugarcoatBeauty.jpg" alt="" /></figure>
+          <figure className="flex justify-center items-center"><img src="/images/Modern_Luxury_Weddings_2022_Exclusive_Mnmber_SugarcoatBeauty.jpg" alt="" /></figure>
+          <figure className="flex justify-center items-center"><img src="/images/Best_of_Bestself_2021_Best_Nail_Salon_SugarcoatBeauty.jpg" alt="" /></figure>
+          <figure className="flex justify-center items-center"><img src="/images/Best_of_Atlanta_SugarcoatBeauty.jpg" alt="" /></figure>
+          <figure className="flex justify-center items-center"><img src="/images/Best_of_Bestself_2020_Best_Nail_Salon_SugarcoatBeauty.jpg" alt="" /></figure>
+          <figure className="flex justify-center items-center"><img src="/images/Jezebel_Best_of Atlanta_2017_Best_Manis_and_Pedis_SugarcoatBeauty.jpg" alt="" /></figure>
         </div>
 
         <div className="w-full h-screen mt-20 bg-[url('/images/11.png')] bg-no-repeat bg-center bg-cover "/>
