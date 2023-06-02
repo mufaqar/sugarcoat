@@ -25,25 +25,25 @@ export default function Home() {
         {OpenNav && (
           <div className="absolute  w-full md:w-[380px] px-6 right-0  top-20">
             <nav className="flex flex-col bg-white/60 gap-4 font-boxley text-xl p-6 rounded-2xl overflow-hidden">
-              <Link className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700" href="/">
+              <Link onClick={() => setOpenNav(!OpenNav)} className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700" href="/">
                 Home
               </Link>
-              <Link className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700" href="#vision">
+              <Link onClick={() => setOpenNav(!OpenNav)} className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700" href="#vision">
                 Our Vision
               </Link>
-              <Link className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700" href="#services">
+              <Link onClick={() => setOpenNav(!OpenNav)} className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700" href="#services">
                 Our Services
               </Link>
-              <Link className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700" href="#testimonials">
+              <Link onClick={() => setOpenNav(!OpenNav)} className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700" href="#testimonials">
                 Testimonials
               </Link>
-              <Link className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700" href="#about">
+              <Link onClick={() => setOpenNav(!OpenNav)} className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700" href="#about">
                 About Us
               </Link>
-              <Link className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700" href="#contact">
+              <Link onClick={() => setOpenNav(!OpenNav)} className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700" href="#contact">
                 Contact us
               </Link>
-              <Link className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700" href="#clients">
+              <Link onClick={() => setOpenNav(!OpenNav)} className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700" href="#clients">
                 Clients
               </Link>
             </nav>
