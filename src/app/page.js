@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import { Services } from "../../public/servises-data";
-import React, { useState } from "react";
-import Link from "next/link";
+import Image from 'next/image';
+import { Services } from '../../public/servises-data';
+import React, { useState } from 'react';
+import Link from 'next/link';
 
 export default function Home() {
   const [OpenNav, setOpenNav] = useState(false);
@@ -15,35 +15,70 @@ export default function Home() {
           onClick={() => setOpenNav(!OpenNav)}
         >
           <Image
-            src={OpenNav ? "/svg/x.svg" : "/svg/menu.svg"}
+            src={OpenNav ? '/svg/x.svg' : '/svg/menu.svg'}
             alt="menu"
             width={100}
             height={100}
-            className={OpenNav ? "w-12 h-12 p-1" : "w-12 h-12"}
+            className={OpenNav ? 'w-12 h-12 p-1' : 'w-12 h-12'}
           />
         </figure>
         {OpenNav && (
           <div className="absolute  w-full md:w-[380px] px-6 right-0  top-20">
             <nav className="flex flex-col bg-white/60 gap-4 font-boxley text-xl p-6 rounded-2xl overflow-hidden">
-              <Link onClick={() => setOpenNav(!OpenNav)} className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700" href="/">
+              <Link
+                onClick={() => setOpenNav(!OpenNav)}
+                className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700"
+                href="/"
+              >
                 Home
               </Link>
-              <Link onClick={() => setOpenNav(!OpenNav)} className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700" href="#vision">
-                Our Vision
-              </Link>
-              <Link onClick={() => setOpenNav(!OpenNav)} className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700" href="#services">
-                Our Services
-              </Link>
-              <Link onClick={() => setOpenNav(!OpenNav)} className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700" href="#testimonials">
-                Testimonials
-              </Link>
-              <Link onClick={() => setOpenNav(!OpenNav)} className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700" href="#about">
+              <Link
+                onClick={() => setOpenNav(!OpenNav)}
+                className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700"
+                href="/"
+              >
                 About Us
               </Link>
-              <Link onClick={() => setOpenNav(!OpenNav)} className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700" href="#contact">
+              <Link
+                onClick={() => setOpenNav(!OpenNav)}
+                className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700"
+                href="#vision"
+              >
+                Our Vision
+              </Link>
+              <Link
+                onClick={() => setOpenNav(!OpenNav)}
+                className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700"
+                href="#services"
+              >
+                Our Services
+              </Link>
+              <Link
+                onClick={() => setOpenNav(!OpenNav)}
+                className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700"
+                href="#testimonials"
+              >
+                Testimonials
+              </Link>
+              <Link
+                onClick={() => setOpenNav(!OpenNav)}
+                className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700"
+                href="#about"
+              >
+                About Us
+              </Link>
+              <Link
+                onClick={() => setOpenNav(!OpenNav)}
+                className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700"
+                href="#contact"
+              >
                 Contact us
               </Link>
-              <Link onClick={() => setOpenNav(!OpenNav)} className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700" href="#clients">
+              <Link
+                onClick={() => setOpenNav(!OpenNav)}
+                className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700"
+                href="#clients"
+              >
                 Clients
               </Link>
             </nav>
@@ -75,7 +110,10 @@ export default function Home() {
               OUR VISION
             </h2>
             <p className="font-boxley">
-            Our vision is to create the ultimate beauty destination. A one stop shop for nails, lashes, hair care, and all things beauty. Sugarcoat Beauty is modern, elegant, and pristine. We aim to provide the most luxurious beauty experience.
+              Our vision is to create the ultimate beauty destination. A one
+              stop shop for nails, lashes, hair care, and all things beauty.
+              Sugarcoat Beauty is modern, elegant, and pristine. We aim to
+              provide the most luxurious beauty experience.
             </p>
           </div>
         </section>
