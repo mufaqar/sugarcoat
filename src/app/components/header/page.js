@@ -35,17 +35,11 @@ export default function Header() {
               <Link
                 onClick={() => setOpenNav(!OpenNav)}
                 className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700"
-                href="/"
+                href="/about"
               >
                 About Us
               </Link>
-              <Link
-                onClick={() => setOpenNav(!OpenNav)}
-                className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700"
-                href="#vision"
-              >
-                Our Vision
-              </Link>
+
               <Link
                 onClick={() => setOpenNav(!OpenNav)}
                 className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700"
@@ -56,16 +50,38 @@ export default function Header() {
               <Link
                 onClick={() => setOpenNav(!OpenNav)}
                 className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700"
-                href="#testimonials"
+                href="/events"
               >
-                Testimonials
+                Parties/Events
               </Link>
               <Link
                 onClick={() => setOpenNav(!OpenNav)}
                 className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700"
-                href="#about"
+                href="/press"
               >
-                About Us
+                Press
+              </Link>
+              <Link
+                onClick={() => setOpenNav(!OpenNav)}
+                className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700"
+                href="/products"
+              >
+                Products
+              </Link>
+              <Link
+                onClick={() => setOpenNav(!OpenNav)}
+                className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700"
+                href="https://squareup.com/gift/MLJMBMXBCCDA2/order"
+              >
+                GIFT CARDS
+              </Link>
+
+              <Link
+                onClick={() => setOpenNav(!OpenNav)}
+                className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700"
+                href="/employment"
+              >
+                Employment
               </Link>
               <Link
                 onClick={() => setOpenNav(!OpenNav)}
@@ -77,9 +93,9 @@ export default function Header() {
               <Link
                 onClick={() => setOpenNav(!OpenNav)}
                 className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700"
-                href="#clients"
+                href="https://go.booker.com/location/sugarcoatbuckhead/"
               >
-                Clients
+                Make Appointment
               </Link>
             </nav>
           </div>
