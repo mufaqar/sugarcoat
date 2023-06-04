@@ -12,7 +12,7 @@ export default function Events() {
           <h2 className="font-kammerlander text-5xl font-light md:max-w-[400px] w-full">
             Events
           </h2>
-          <p className="font-boxley">Event Page</p>
+          <p className="font-boxley">Event Laout Page</p>
         </div>
       </section>
       <Footer />
