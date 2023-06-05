@@ -43,16 +43,16 @@ export default function Header() {
               <Link
                 onClick={() => setOpenNav(!OpenNav)}
                 className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700"
-                href="#services"
+                href="/services"
               >
                 Our Services
               </Link>
               <Link
                 onClick={() => setOpenNav(!OpenNav)}
                 className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700"
-                href="/events"
+                href="/locations"
               >
-                Parties/Events
+                Locations
               </Link>
               <Link
                 onClick={() => setOpenNav(!OpenNav)}
