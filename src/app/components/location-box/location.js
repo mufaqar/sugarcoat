@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 export default function LocationBox({ post }) {
@@ -15,9 +16,9 @@ export default function LocationBox({ post }) {
                     {post?.name}
                 </h3>
                 <h5 className="font-boxley font-light text-sm my-3">{post?.address}</h5>
-                <p className="font-boxley font-bold text-sm">
-                    {post?.specs}
-                </p>
+                <Link href={`tel:${post.num}`} className="font-boxley font-bold text-sm">
+                    {post?.num}
+                </Link>
             </div>
         </div>
     )
