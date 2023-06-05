@@ -1,7 +1,9 @@
+import Call_To_Action from "../cta/call-to-action";
+
 export default function Footer() {
   return (
-    <>
-      <div className="w-full h-screen mt-20 bg-[url('/images/11.png')] bg-no-repeat bg-center bg-cover " />
-    </>
+    <footer>
+      <Call_To_Action />
+    </footer>
   );
 }

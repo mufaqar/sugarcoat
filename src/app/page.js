@@ -218,10 +218,8 @@ export default function Home() {
         </figure>
       </div>
       <section id="contact">
-        <Call_To_Action />
+      
       </section>
-
-
       <Footer />
     </>
   );

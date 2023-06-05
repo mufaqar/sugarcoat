@@ -1,11 +1,8 @@
 import { Locations_data } from '../../../public/locations';
-import { Services } from '../../../public/servises-data';
-import Call_To_Action from '../components/cta/call-to-action';
 import Footer from '../components/footer/page';
 import Header from '../components/header/page';
 import LocationBox from '../components/location-box/location';
 import Banner from '../components/main/banner';
-import ServiceBox from '../components/service-box/service';
 
 export default function Locations() {
   return (
@@ -16,7 +13,7 @@ export default function Locations() {
         title="SUGARCOAT"
         sub_title="WE MAKE LIFE SWEETER"
       />
-      <section id="services">
+      <section id="services" className='mb-16'>
         <div className="mt-10 container mx-auto"  >
           <h2 className="font-kammerlander text-4xl font-light text-center">
             OUR LOCATIONS
@@ -30,9 +27,7 @@ export default function Locations() {
           })}
         </div>
       </section>
-      <section className='my-20'>
-        <Call_To_Action />
-      </section>
+     
       <Footer />
     </>
   );

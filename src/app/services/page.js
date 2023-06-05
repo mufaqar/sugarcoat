@@ -2,7 +2,6 @@ import React from 'react'
 import Banner from '../components/main/banner'
 import ServiceBox from '../components/service-box/service';
 import { Services } from '../../../public/servises-data';
-import Call_To_Action from '../components/cta/call-to-action';
 import Header from '../components/header/page';
 import Footer from '../components/footer/page';
 
@@ -15,7 +14,7 @@ function page() {
                 title="SUGARCOAT"
                 sub_title="WE MAKE LIFE SWEETER"
             />
-            <section id="services">
+            <section id="services" className='mb-16'>
                 <div className="mt-10 container mx-auto"  >
                     <h2 className="font-kammerlander text-4xl font-light text-center">OUR SERVICE</h2>
                 </div>
@@ -26,9 +25,6 @@ function page() {
                         );
                     })}
                 </div>
-            </section>
-            <section className='my-20'>
-                <Call_To_Action />
             </section>
             <Footer />
         </>
