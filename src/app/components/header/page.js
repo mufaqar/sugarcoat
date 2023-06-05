@@ -100,27 +100,7 @@ export default function Header() {
             </nav>
           </div>
         )}
-      </header>
-
-      <div className="">
-        {/* main section */}
-        <main className="w-full h-screen bg-[url('/images/11.png')] bg-no-repeat bg-cover bg-center border-b-[1px] border-gray-200">
-          <div className="text-center text-white flex flex-col justify-end items-center h-screen px-4">
-            <h1 className=" text-4xl md:text-6xl font-kammerlander font-light sm:tracking-[3vh] tracking-[16px] pb-3 ">
-              SUGARCOAT
-            </h1>
-            <p className="mb-4 font-light md:text-xl font-boxley tracking-[6px]">
-              WE MAKE LIFE SWEETER
-            </p>
-            <a
-              href="#"
-              className="px-10 font-boxley mb-[1px] py-3 text-black bg-white "
-            >
-              BOOK AN APPOINTENT
-            </a>
-          </div>
-        </main>
-      </div>
+      </header>        
     </>
   );
 }
