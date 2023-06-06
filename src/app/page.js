@@ -1,14 +1,11 @@
 'use client';
-
 import Image from 'next/image';
 import { Services } from '../../public/servises-data';
 import React, { useState } from 'react';
-import Link from 'next/link';
 import Header from './components/header/page';
 import Footer from './components/footer/page';
 import ServiceBox from './components/service-box/service';
 import Banner from './components/main/banner';
-import Call_To_Action from './components/cta/call-to-action';
 
 export default function Home() {
   const [OpenNav, setOpenNav] = useState(false);
