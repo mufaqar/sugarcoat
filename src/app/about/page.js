@@ -17,7 +17,7 @@ export default function About() {
           <h2 className="font-kammerlander text-4xl font-light md:max-w-[400px] w-full">
             OUR VISION
           </h2>
-          <p className="font-boxley text-lg">
+          <p className="font-montserrat text-lg">
             Our vision is to create the ultimate beauty destination. A one stop
             shop for nails, lashes, hair care, and all things beauty. Sugarcoat
             Beauty is modern, elegant, and pristine. We aim to provide the most
