@@ -99,7 +99,7 @@ export default function Home() {
         <div className="grid grid-cols-3 md:gap-20 gap-0 px-10 max-sm:grid-cols-1 max-md:grid-cols-2 container mx-auto ">
           <div className="md:mt-20 mt-10 text-center ">
             <hr className="border-black" />
-            <p className="mt-10 text-base font-normal font-montserrat">
+            <p className="mt-10 text-sm font-normal font-montserrat">
               "I LOVE GOING TO SUGARCOAT IN ATLANTA-THEIR MENU IS PERFECT. IF I'M
               ON THE GO, I'LL POP IN FOR A QUICK EXPRESS MANICURE. ON DAYS WHEN I
               HAVE TIME TO RELAX, I'LL PAMPER MYSELF WITH THEIR SIGNAGTURE
@@ -107,7 +107,7 @@ export default function Home() {
               LOVE THE PINK AND WHITE DECOR AT THE BUCKHEAD LOCATION. IT'S VERY
               GIRLIE AND REMINDS ME OF THE SPANX OFFICES! "
             </p>
-            <h4 className="mt-10 text-xl font-medium font-montserrat">
+            <h4 className="mt-10 text-base font-medium font-montserrat">
               SARA BLAKELY
               <br />
               FOUNDER OF SPANX <span className="text-red-500">❤</span>
@@ -115,7 +115,7 @@ export default function Home() {
           </div>
           <div className="md:mt-20 mt-10 text-center">
             <hr className="border-black" />
-            <p className="mt-10 text-base font-normal font-montserrat">
+            <p className="mt-10 text-sm font-normal font-montserrat">
               "BOOST YOUR PRODUCT AND SERVICE'S CREDIBILITY BY ADDING TESTIMONIALS
               FROM YOUR CLIENTS.
               <br />
@@ -123,7 +123,7 @@ export default function Home() {
               PEOPLE LOVE RECOMMENDATIONS SO FEEDBACK FROM OTHERS WHO'VE TRIED IT
               IS INVALUABLE."
             </p>
-            <h4 className="mt-10 text-xl font-medium font-montserrat">
+            <h4 className="mt-10 text-base font-medium font-montserrat">
               ERICA BOGART
               <br />
               AWARD WINNING MAKEUP ARTIST
@@ -131,12 +131,12 @@ export default function Home() {
           </div>
           <div className="md:mt-20 mt-10 text-center">
             <hr className="border-black" />
-            <p className="mt-10 text-base font-normal font-montserrat">
+            <p className="mt-10 text-sm font-normal font-montserrat">
               "BOOST YOUR PRODUCT AND SERVICE'S CREDIBILITY BY ADDING TESTIMONIALS
               FROM YOUR CLIENTS. FEEDBACK FROM OTHERS WHO'VE TRIED IT IS
               INVALUABLE. "
             </p>
-            <h4 className="mt-10 text-xl font-medium font-montserrat">
+            <h4 className="mt-10 text-base font-medium font-montserrat">
               BRENDA WOOD
               <br />
               NEWS ANCHOR
