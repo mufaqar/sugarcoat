@@ -22,11 +22,11 @@ export default function Home() {
       />
 
       <section className="px-4 mt-40 " id="vision">
-        <div className="flex items-center flex-col md:flex-row px-6 md:px-20 border md:py-28 py-12 gap-4 md:gap-32 border-black mx-auto container">
+        <div className="flex items-center flex-col md:flex-row px-6 md:px-28 border md:py-28 py-12 gap-4 md:gap-0 border-black mx-auto container">
           <h2 className="font-kammerlander text-4xl font-light md:max-w-[400px] w-full">
             OUR VISION
           </h2>
-          <p className="font-boxley">
+          <p className="font-boxley text-lg">
             Our vision is to create the ultimate beauty destination. A one stop
             shop for nails, lashes, hair care, and all things beauty. Sugarcoat
             Beauty is modern, elegant, and pristine. We aim to provide the most
@@ -39,7 +39,7 @@ export default function Home() {
         <div className="mt-40 container mx-auto"  >
           <h2 className="font-kammerlander text-4xl font-light text-center">OUR SERVICE</h2>
         </div>
-        <div className="grid grid-cols-1 gap-10 px-10 mt-20 sm:grid-cols-2 lg:grid-cols-3 container mx-auto">
+        <div className="grid grid-cols-1 md:gap-y-20 gap-10 px-10 mt-20 sm:grid-cols-2 lg:grid-cols-3 container mx-auto">
           {Services.map((post, idx) => {
             return (
               <ServiceBox post={post} key={idx} />
@@ -93,61 +93,63 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="mt-40  " id="testimonials">
-        <h2 className="font-kammerlander text-4xl text-center">
-          CLIENT <br /> TESTIMONIALS
-        </h2>
-      </div>
+      <section className='bg-[#F7F6F6] py-20' id="testimonials">
+        <div className="" >
+          <h2 className="font-kammerlander text-4xl text-center">
+            CLIENT <br /> TESTIMONIALS
+          </h2>
+        </div>
+        <div className="grid grid-cols-3 gap-20 px-10 max-sm:grid-cols-1 max-md:grid-cols-2 container mx-auto ">
+          <div className="mt-20 text-center ">
+            <hr className="border-black" />
+            <p className="mt-10 text-base font-normal">
+              "I LOVE GOING TO SUGARCOAT IN ATLANTA-THEIR MENU IS PERFECT. IF I'M
+              ON THE GO, I'LL POP IN FOR A QUICK EXPRESS MANICURE. ON DAYS WHEN I
+              HAVE TIME TO RELAX, I'LL PAMPER MYSELF WITH THEIR SIGNAGTURE
+              MANI-PEDI, COMPLETE WITH THE SALON'S SUGARCOAT SUGAR SCRUB. PLUS, I
+              LOVE THE PINK AND WHITE DECOR AT THE BUCKHEAD LOCATION. IT'S VERY
+              GIRLIE AND REMINDS ME OF THE SPANX OFFICES! "
+            </p>
+            <h4 className="mt-10 text-xl font-bold font-kammerlander">
+              SARA BLAKELY
+              <br />
+              FOUNDER OF SPANX <span className="text-red-500">❤</span>
+            </h4>
+          </div>
+          <div className="mt-20 text-center">
+            <hr className="border-black" />
+            <p className="mt-10 text-base font-normal">
+              "BOOST YOUR PRODUCT AND SERVICE'S CREDIBILITY BY ADDING TESTIMONIALS
+              FROM YOUR CLIENTS.
+              <br />
+              <br />
+              PEOPLE LOVE RECOMMENDATIONS SO FEEDBACK FROM OTHERS WHO'VE TRIED IT
+              IS INVALUABLE."
+            </p>
+            <h4 className="mt-10 text-xl font-bold font-kammerlander">
+              ERICA BOGART
+              <br />
+              AWARD WINNING MAKEUP ARTIST
+            </h4>
+          </div>
+          <div className="mt-20 text-center">
+            <hr className="border-black" />
+            <p className="mt-10 text-base font-normal">
+              "BOOST YOUR PRODUCT AND SERVICE'S CREDIBILITY BY ADDING TESTIMONIALS
+              FROM YOUR CLIENTS. FEEDBACK FROM OTHERS WHO'VE TRIED IT IS
+              INVALUABLE. "
+            </p>
+            <h4 className="mt-10 text-xl font-bold font-kammerlander">
+              BRENDA WOOD
+              <br />
+              NEWS ANCHOR
+            </h4>
+          </div>
+        </div>
+      </section>
 
-      <div className="grid grid-cols-3 gap-20 px-10 max-sm:grid-cols-1 max-md:grid-cols-2 container mx-auto">
-        <div className="mt-20 text-center ">
-          <hr className="border-black" />
-          <p className="mt-10 text-xs font-normal">
-            "I LOVE GOING TO SUGARCOAT IN ATLANTA-THEIR MENU IS PERFECT. IF I'M
-            ON THE GO, I'LL POP IN FOR A QUICK EXPRESS MANICURE. ON DAYS WHEN I
-            HAVE TIME TO RELAX, I'LL PAMPER MYSELF WITH THEIR SIGNAGTURE
-            MANI-PEDI, COMPLETE WITH THE SALON'S SUGARCOAT SUGAR SCRUB. PLUS, I
-            LOVE THE PINK AND WHITE DECOR AT THE BUCKHEAD LOCATION. IT'S VERY
-            GIRLIE AND REMINDS ME OF THE SPANX OFFICES! "
-          </p>
-          <h4 className="mt-10 text-xl font-bold font-kammerlander">
-            SARA BLAKELY
-            <br />
-            FOUNDER OF SPANX <span className="text-red-500">❤</span>
-          </h4>
-        </div>
-        <div className="mt-20 text-center">
-          <hr className="border-black" />
-          <p className="mt-10 text-xs font-normal">
-            "BOOST YOUR PRODUCT AND SERVICE'S CREDIBILITY BY ADDING TESTIMONIALS
-            FROM YOUR CLIENTS.
-            <br />
-            PEOPLE LOVE RECOMMENDATIONS SO FEEDBACK FROM OTHERS WHO'VE TRIED IT
-            IS INVALUABLE."
-          </p>
-          <h4 className="mt-10 text-xl font-bold font-kammerlander">
-            ERICA BOGART
-            <br />
-            AWARD WINNING MAKEUP ARTIST
-          </h4>
-        </div>
-        <div className="mt-20 text-center">
-          <hr className="border-black" />
-          <p className="mt-10 text-xs font-normal">
-            "BOOST YOUR PRODUCT AND SERVICE'S CREDIBILITY BY ADDING TESTIMONIALS
-            FROM YOUR CLIENTS. FEEDBACK FROM OTHERS WHO'VE TRIED IT IS
-            INVALUABLE. "
-          </p>
-          <h4 className="mt-10 text-xl font-bold font-kammerlander">
-            BRENDA WOOD
-            <br />
-            NEWS ANCHOR
-          </h4>
-        </div>
-      </div>
-
-      <div className="w-full py-20 mt-20 bg-[#252427] px-4" id="about">
-        <div className="pt-10 text-center text-white">
+      <section className=" py-20 bg-[#252527] px-4" id="about">
+        <div className="pt-10 text-center text-white container mx-auto">
           <h5 className="font-semibold text-lg font-boxley">ABOUT THE BRAND</h5>
           <h2 className="my-7 font-light text-[38px] leading-[44px] md:text-[80px] md:leading-[93px] font-kammerlander">
             WE TAKE CARE OF <br /> OUR CLIENTS AND <br /> OUR PEOPLE.
@@ -159,7 +161,7 @@ export default function Home() {
             <br /> TO RELAX AND REJUVENATE
           </p>
         </div>
-      </div>
+      </section>
 
       <div
         id="clients"
@@ -218,7 +220,7 @@ export default function Home() {
         </figure>
       </div>
       <section id="contact">
-      
+
       </section>
       <Footer />
     </>

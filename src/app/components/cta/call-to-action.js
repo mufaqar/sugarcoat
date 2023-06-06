@@ -13,38 +13,44 @@ export default function Call_To_Action() {
                             <h2 className="text-4xl font-kammerlander">CONTACT US</h2>
                             <div className='mt-9'>
                                 <h3 className="font-bold font-boxley text-base">PHONE</h3>
-                                <p className="font-boxley text-sm">(404)00080000</p>
+                                <Link href="tel:(404)999-8688" className="font-boxley text-sm">(404)999-8688</Link>
                             </div>
                             <div className="mt-9">
                                 <h3 className="font-bold font-boxley text-base">EMAIL</h3>
                                 <Link href="mailto:hello@sugarcoatbeauty.com" className="font-boxley text-sm">
-                                    HELLO@ SUGARCOATBEAUTY.COOM
+                                    HELLO@SUGARCOATBEAUTY.COM
                                 </Link>
                             </div>
                             <div className="mt-9">
                                 <h3 className="font-bold font-boxley text-base">SOCIAL</h3>
                                 <div className="mt-2 text-sm flex justify-center item gap-3">
-                                    <Image
-                                        src="/svg/faceboook.svg"
-                                        alt="facebook"
-                                        width={120}
-                                        height={120}
-                                        className="w-6 h-6"
-                                    />
-                                    <Image
-                                        src="/svg/twitter.svg"
-                                        alt="twitter"
-                                        width={120}
-                                        height={120}
-                                        className="w-6 h-6"
-                                    />
-                                    <Image
-                                        src="/svg/instagram.svg"
-                                        alt="insta"
-                                        width={120}
-                                        height={120}
-                                        className="w-6 h-6"
-                                    />
+                                    <Link href="#">
+                                        <Image
+                                            src="/svg/faceboook.svg"
+                                            alt="facebook"
+                                            width={120}
+                                            height={120}
+                                            className="w-6 h-6"
+                                        />
+                                    </Link>
+                                    <Link href="#">
+                                        <Image
+                                            src="/svg/twitter.svg"
+                                            alt="twitter"
+                                            width={120}
+                                            height={120}
+                                            className="w-6 h-6"
+                                        />
+                                    </Link>
+                                    <Link href="#">
+                                        <Image
+                                            src="/svg/instagram.svg"
+                                            alt="insta"
+                                            width={120}
+                                            height={120}
+                                            className="w-6 h-6"
+                                        />
+                                    </Link>
                                 </div>
                                 <div className="mt-20">
                                     <p className="font-boxley md:text-base text-sm">
