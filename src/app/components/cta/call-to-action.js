@@ -4,7 +4,7 @@ import React from 'react'
 
 export default function Call_To_Action() {
     return (
-        <div className="w-full px-4 py-20 bg-[url('/images/Contact-BG_Atlanta.jpg')] bg-no-repeat bg-cover"
+        <div className="w-full px-4 md:py-20 py-10 bg-[url('/images/Contact-BG_Atlanta.jpg')] bg-no-repeat bg-cover"
         >
             <div className='flex justify-center flex-col items-end container mx-auto'>
                 <div className="p-4 md:max-w-[440px] w-full bg-white m-auto md:mr-20">

@@ -33,10 +33,10 @@ export default function Home() {
       </section>
 
       <section id="services">
-        <div className="mt-40 container mx-auto"  >
+        <div className="md:mt-40 mt-20 container mx-auto"  >
           <h2 className="font-kammerlander text-4xl font-light text-center">OUR SERVICE</h2>
         </div>
-        <div className="grid grid-cols-1 md:gap-y-20 gap-10 px-10 mt-20 sm:grid-cols-2 lg:grid-cols-3 container mx-auto">
+        <div className="grid grid-cols-1 md:gap-y-20 gap-10 px-10 md:mt-20 mt-10 sm:grid-cols-2 lg:grid-cols-3 container mx-auto">
           {Services.map((post, idx) => {
             return (
               <ServiceBox post={post} key={idx} />
@@ -45,7 +45,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex flex-col md:flex-row gap-5 px-10 mt-40 container mx-auto">
+      <section className="flex flex-col md:flex-row gap-5 px-10 md:mt-40 mt-10 container mx-auto">
         <div className="py-5 lg:max-w-[35%] w-full">
           <div className="w-full p-4 border h-full border-black sm:p-6 md:p-8 flex flex-col justify-center items-center">
             <div className="text-4xl font-light text-center">
@@ -96,8 +96,8 @@ export default function Home() {
             CLIENT <br /> TESTIMONIALS
           </h2>
         </div>
-        <div className="grid grid-cols-3 gap-20 px-10 max-sm:grid-cols-1 max-md:grid-cols-2 container mx-auto ">
-          <div className="mt-20 text-center ">
+        <div className="grid grid-cols-3 md:gap-20 gap-0 px-10 max-sm:grid-cols-1 max-md:grid-cols-2 container mx-auto ">
+          <div className="md:mt-20 mt-10 text-center ">
             <hr className="border-black" />
             <p className="mt-10 text-base font-normal">
               "I LOVE GOING TO SUGARCOAT IN ATLANTA-THEIR MENU IS PERFECT. IF I'M
@@ -113,7 +113,7 @@ export default function Home() {
               FOUNDER OF SPANX <span className="text-red-500">❤</span>
             </h4>
           </div>
-          <div className="mt-20 text-center">
+          <div className="md:mt-20 mt-10 text-center">
             <hr className="border-black" />
             <p className="mt-10 text-base font-normal">
               "BOOST YOUR PRODUCT AND SERVICE'S CREDIBILITY BY ADDING TESTIMONIALS
@@ -129,7 +129,7 @@ export default function Home() {
               AWARD WINNING MAKEUP ARTIST
             </h4>
           </div>
-          <div className="mt-20 text-center">
+          <div className="md:mt-20 mt-10 text-center">
             <hr className="border-black" />
             <p className="mt-10 text-base font-normal">
               "BOOST YOUR PRODUCT AND SERVICE'S CREDIBILITY BY ADDING TESTIMONIALS
@@ -145,7 +145,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className=" py-20 bg-[#252527] px-4" id="about">
+      <section className="md:py-20 py-10 bg-[#252527] px-4" id="about">
         <div className="pt-10 text-center text-white container mx-auto">
           <h5 className="font-semibold text-lg font-boxley">ABOUT THE BRAND</h5>
           <h2 className="my-7 font-light text-[38px] leading-[44px] md:text-[80px] md:leading-[93px] font-kammerlander">
