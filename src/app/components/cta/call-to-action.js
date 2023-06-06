@@ -12,17 +12,17 @@ export default function Call_To_Action() {
                         <div className="mt-10 text-center">
                             <h2 className="text-4xl font-kammerlander">CONTACT US</h2>
                             <div className='mt-9'>
-                                <h3 className="font-bold font-boxley text-base">PHONE</h3>
-                                <Link href="tel:(404)999-8688" className="font-boxley text-sm">(404)999-8688</Link>
+                                <h3 className="font-bold font-montserrat text-base">PHONE</h3>
+                                <Link href="tel:(404)999-8688" className="font-montserrat text-sm">(404)999-8688</Link>
                             </div>
                             <div className="mt-9">
-                                <h3 className="font-bold font-boxley text-base">EMAIL</h3>
-                                <Link href="mailto:hello@sugarcoatbeauty.com" className="font-boxley text-sm">
+                                <h3 className="font-bold font-montserrat text-base">EMAIL</h3>
+                                <Link href="mailto:hello@sugarcoatbeauty.com" className="font-montserrat text-sm">
                                     HELLO@SUGARCOATBEAUTY.COM
                                 </Link>
                             </div>
                             <div className="mt-9">
-                                <h3 className="font-bold font-boxley text-base">SOCIAL</h3>
+                                <h3 className="font-bold font-montserrat text-base">SOCIAL</h3>
                                 <div className="mt-2 text-sm flex justify-center item gap-3">
                                     <Link href="#">
                                         <Image
@@ -53,7 +53,7 @@ export default function Call_To_Action() {
                                     </Link>
                                 </div>
                                 <div className="mt-20">
-                                    <p className="font-boxley md:text-base text-sm">
+                                    <p className="font-montserrat md:text-base text-sm">
                                         OUR SALONS ARE FULLY ACCESSIBLE. PLEASE REACH OUT FOR
                                         FURTHER ACCOMMODATIONS.
                                     </p>

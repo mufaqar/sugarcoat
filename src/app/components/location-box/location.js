@@ -12,11 +12,11 @@ export default function LocationBox({ post }) {
                 />
             </div>
             <div className="mt-4 mb-5 text-center">
-                <h3 className="text-lg font-light font-kammerlander">
+                <h3 className="text-lg font-normal font-kammerlander">
                     {post?.name}
                 </h3>
-                <h5 className="font-boxley font-light text-sm my-3">{post?.address}</h5>
-                <Link href={`tel:${post.num}`} className="font-boxley font-bold text-sm">
+                <h5 className="font-montserrat font-light text-sm my-3">{post?.address}</h5>
+                <Link href={`tel:${post.num}`} className="font-montserrat font-semibold text-sm">
                     {post?.num}
                 </Link>
             </div>

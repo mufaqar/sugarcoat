@@ -23,7 +23,7 @@ export default function Home() {
           <h2 className="font-kammerlander text-4xl font-light md:max-w-[400px] w-full">
             OUR VISION
           </h2>
-          <p className="font-boxley text-lg">
+          <p className="font-montserrat text-lg">
             Our vision is to create the ultimate beauty destination. A one stop
             shop for nails, lashes, hair care, and all things beauty. Sugarcoat
             Beauty is modern, elegant, and pristine. We aim to provide the most
@@ -61,7 +61,7 @@ export default function Home() {
                 height={120}
                 className="w-12 h-12 border border-black rounded-full p-2"
               />
-              <h3 className="font-boxley text-sm">ORGANIC</h3>
+              <h3 className="font-montserrat text-sm">ORGANIC</h3>
             </div>
             <div className="mt-10 flex flex-col justify-center gap-2 items-center text-center">
               <Image
@@ -71,7 +71,7 @@ export default function Home() {
                 height={120}
                 className="w-12 h-12 border border-black rounded-full p-2"
               />
-              <h3 className="font-boxley text-sm">NON-TOXIC</h3>
+              <h3 className="font-montserrat text-sm">NON-TOXIC</h3>
             </div>
             <div className="mt-10 flex flex-col justify-center gap-2 items-center text-center">
               <Image
@@ -81,7 +81,7 @@ export default function Home() {
                 height={120}
                 className="w-12 h-12 border border-black rounded-full p-2"
               />
-              <h3 className="font-boxley text-sm">ECO-FRIENDLY</h3>
+              <h3 className="font-montserrat text-sm">ECO-FRIENDLY</h3>
             </div>
           </div>
         </div>
@@ -99,7 +99,7 @@ export default function Home() {
         <div className="grid grid-cols-3 md:gap-20 gap-0 px-10 max-sm:grid-cols-1 max-md:grid-cols-2 container mx-auto ">
           <div className="md:mt-20 mt-10 text-center ">
             <hr className="border-black" />
-            <p className="mt-10 text-base font-normal">
+            <p className="mt-10 text-base font-normal font-montserrat">
               "I LOVE GOING TO SUGARCOAT IN ATLANTA-THEIR MENU IS PERFECT. IF I'M
               ON THE GO, I'LL POP IN FOR A QUICK EXPRESS MANICURE. ON DAYS WHEN I
               HAVE TIME TO RELAX, I'LL PAMPER MYSELF WITH THEIR SIGNAGTURE
@@ -107,7 +107,7 @@ export default function Home() {
               LOVE THE PINK AND WHITE DECOR AT THE BUCKHEAD LOCATION. IT'S VERY
               GIRLIE AND REMINDS ME OF THE SPANX OFFICES! "
             </p>
-            <h4 className="mt-10 text-xl font-bold font-kammerlander">
+            <h4 className="mt-10 text-xl font-medium font-montserrat">
               SARA BLAKELY
               <br />
               FOUNDER OF SPANX <span className="text-red-500">❤</span>
@@ -115,7 +115,7 @@ export default function Home() {
           </div>
           <div className="md:mt-20 mt-10 text-center">
             <hr className="border-black" />
-            <p className="mt-10 text-base font-normal">
+            <p className="mt-10 text-base font-normal font-montserrat">
               "BOOST YOUR PRODUCT AND SERVICE'S CREDIBILITY BY ADDING TESTIMONIALS
               FROM YOUR CLIENTS.
               <br />
@@ -123,7 +123,7 @@ export default function Home() {
               PEOPLE LOVE RECOMMENDATIONS SO FEEDBACK FROM OTHERS WHO'VE TRIED IT
               IS INVALUABLE."
             </p>
-            <h4 className="mt-10 text-xl font-bold font-kammerlander">
+            <h4 className="mt-10 text-xl font-medium font-montserrat">
               ERICA BOGART
               <br />
               AWARD WINNING MAKEUP ARTIST
@@ -131,12 +131,12 @@ export default function Home() {
           </div>
           <div className="md:mt-20 mt-10 text-center">
             <hr className="border-black" />
-            <p className="mt-10 text-base font-normal">
+            <p className="mt-10 text-base font-normal font-montserrat">
               "BOOST YOUR PRODUCT AND SERVICE'S CREDIBILITY BY ADDING TESTIMONIALS
               FROM YOUR CLIENTS. FEEDBACK FROM OTHERS WHO'VE TRIED IT IS
               INVALUABLE. "
             </p>
-            <h4 className="mt-10 text-xl font-bold font-kammerlander">
+            <h4 className="mt-10 text-xl font-medium font-montserrat">
               BRENDA WOOD
               <br />
               NEWS ANCHOR
@@ -147,11 +147,11 @@ export default function Home() {
 
       <section className="md:py-20 py-10 bg-[#252527] px-4" id="about">
         <div className="pt-10 text-center text-white container mx-auto">
-          <h5 className="font-semibold text-lg font-boxley">ABOUT THE BRAND</h5>
+          <h5 className="font-semibold text-lg font-montserrat">ABOUT THE BRAND</h5>
           <h2 className="my-7 font-light text-[38px] leading-[44px] md:text-[80px] md:leading-[93px] font-kammerlander">
             WE TAKE CARE OF <br /> OUR CLIENTS AND <br /> OUR PEOPLE.
           </h2>
-          <p className="font-boxley md:text-lg text-xs font-light">
+          <p className="font-montserrat md:text-lg text-xs font-light">
             WE LOVE SERVING OUR COMMUNITY, WE STRIVE TO PROVIDE THE BEST
             <br />
             PRODUCTS AND SERVICES TO CREATE THE ULTIMATE BEAUTY OASIS FOR ALL

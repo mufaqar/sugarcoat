@@ -11,7 +11,7 @@ export default function ServiceBox({post}) {
                 />
             </div>
             <div className="mt-4 text-center">
-                <h5 className="font-boxley font-light text-sm">{post?.tag}</h5>
+                <h5 className="font-montserrat font-light text-sm">{post?.tag}</h5>
                 <h3 className="mt-5 text-2xl font-semibold font-kammerlander">
                     {post?.name}
                 </h3>
