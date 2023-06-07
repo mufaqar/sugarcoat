@@ -57,6 +57,13 @@ export default function Header() {
               <Link
                 onClick={() => setOpenNav(!OpenNav)}
                 className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700"
+                href="#"
+              >
+                Parties /Events
+              </Link>
+              <Link
+                onClick={() => setOpenNav(!OpenNav)}
+                className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700"
                 href="/press"
               >
                 Press
@@ -100,7 +107,7 @@ export default function Header() {
             </nav>
           </div>
         )}
-      </header>        
+      </header>
     </>
   );
 }

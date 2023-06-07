@@ -11,12 +11,18 @@ export default function LocationBox({ post }) {
                     className="w-full h-full object-cover"
                 />
             </div>
-            <div className="mt-4 mb-5 text-center">
-                <h3 className="text-lg font-normal font-kammerlander">
+            <div className="my-5 text-center">
+                <Link
+                    href="#"
+                    className="text-xs px-2 font-montserrat py-1 text-white bg-black hover:bg-white hover:text-black border-2 border-black"
+                >
+                    Make Appointment
+                </Link>
+                <h3 className="text-lg font-normal font-kammerlander mt-3">
                     {post?.name}
                 </h3>
                 <h5 className="font-montserrat font-light text-sm my-3">{post?.address}</h5>
-                <Link href={`tel:${post.num}`} className="font-montserrat font-semibold text-sm">
+                <Link href={`tel:${post.num}`} className="font-montserrat font-normal text-sm">
                     {post?.num}
                 </Link>
             </div>

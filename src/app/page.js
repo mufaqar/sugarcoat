@@ -6,6 +6,7 @@ import Header from './components/header/page';
 import Footer from './components/footer/page';
 import ServiceBox from './components/service-box/service';
 import Banner from './components/main/banner';
+import Link from 'next/link';
 
 export default function Home() {
   const [OpenNav, setOpenNav] = useState(false);
@@ -32,7 +33,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="services">
+      <section id="services" className='px-4'>
         <div className="md:mt-40 mt-20 container mx-auto"  >
           <h2 className="font-kammerlander text-4xl font-light text-center">OUR SERVICE</h2>
         </div>
@@ -42,6 +43,14 @@ export default function Home() {
               <ServiceBox post={post} key={idx} />
             );
           })}
+        </div>
+        <div className="container mx-auto mt-10 text-center"  >
+          <Link
+            href="/services"
+            className="md:text-lg text-xs px-5 font-montserrat mt-5 mb-10 py-2 text-white bg-black hover:bg-white hover:text-black border-2 border-black"
+          >
+            More Services
+          </Link>
         </div>
       </section>
 
@@ -147,8 +156,8 @@ export default function Home() {
 
       <section className="md:py-20 py-10 bg-[#252527] px-4" id="about">
         <div className="pt-10 text-center text-white container mx-auto">
-          <h5 className="font-semibold text-lg font-montserrat">ABOUT THE BRAND</h5>
-          <h2 className="my-7 font-light text-[38px] leading-[44px] md:text-[80px] md:leading-[93px] font-kammerlander">
+          <h5 className="font-extralight text-base font-montserrat">ABOUT THE BRAND</h5>
+          <h2 className="mb-7 mt-10 font-light text-[38px] leading-[44px] md:text-[80px] md:leading-[93px] font-kammerlander">
             WE TAKE CARE OF <br /> OUR CLIENTS AND <br /> OUR PEOPLE.
           </h2>
           <p className="font-montserrat md:text-lg text-xs font-light">
