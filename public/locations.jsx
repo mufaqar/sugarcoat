@@ -1,31 +1,31 @@
 export const Locations_data = [
      {
           name: 'Buckhead – The Shops at Pharr',
-          address: '320 Pharr Road NE, Atlanta, GA 30305',
+          address: '320 Pharr Road NE Atlanta, GA 30305',
           image: '/images/locations.png',
           num: '4048142121',
      },
      {
           name: 'Chastain',
-          address: '4365 Roswell Rd Suite 4385Atlanta, GA 30342',
+          address: '4365 Roswell Rd Suite 4385 Atlanta, GA 30342',
           image: '/images/location1.png',
           num: '4046008600',
      },
      {
           name: 'Virginia Highland',
-          address: '1062 St. Charles Ave. NEAtlanta, GA 30306',
+          address: '1062 St. Charles Ave. NE Atlanta, GA 30306',
           image: '/images/location2.png',
           num: '4042490013',
      },
      {
           name: 'Vinings',
-          address: '4300 Paces Ferry Rd, Ste 230Atlanta, GA 30339',
+          address: '4300 Paces Ferry Rd, Ste 230 Atlanta, GA 30339',
           image: '/images/location3.png',
           num: '7708019888',
      },
      {
           name: 'Midtown',
-          address: '60 11th Street Suite3AAtlanta, GA 30309',
+          address: '60 11th Street Suite3A Atlanta, GA 30309',
           image: '/images/location4.png',
           num: '4049998688',
      },

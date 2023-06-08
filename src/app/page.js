@@ -99,7 +99,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='bg-[#F7F6F6] py-20' id="testimonials">
+      <section className='bg-[#F7F6F6] py-28 mt-20' id="testimonials">
         <div className="" >
           <h2 className="font-kammerlander text-4xl text-center">
             CLIENT <br /> TESTIMONIALS
@@ -155,9 +155,9 @@ export default function Home() {
       </section>
 
       <section className="md:py-20 py-10 bg-[#252527] px-4" id="about">
-        <div className="pt-10 text-center text-white container mx-auto">
-          <h5 className="font-extralight text-base font-montserrat">ABOUT THE BRAND</h5>
-          <h2 className="mb-7 mt-10 font-light text-[38px] leading-[44px] md:text-[80px] md:leading-[93px] font-kammerlander">
+        <div className="text-center text-white container mx-auto">
+          <h5 className="font-extralight text-sm font-montserrat">ABOUT THE BRAND</h5>
+          <h2 className="mb-7 mt-24 font-light text-[38px] leading-[44px] md:text-[80px] md:leading-[93px] font-kammerlander">
             WE TAKE CARE OF <br /> OUR CLIENTS AND <br /> OUR PEOPLE.
           </h2>
           <p className="font-montserrat md:text-lg text-xs font-light">

@@ -7,6 +7,12 @@ import Link from 'next/link';
 
 export default function Header() {
   const [OpenNav, setOpenNav] = useState(false);
+  const origin =
+  typeof window !== 'undefined' && window.location.origin
+  ? window.location.origin
+  : '';
+
+
   return (
     <>
       <header className=" w-full">
@@ -40,13 +46,7 @@ export default function Header() {
                 About Us
               </Link>
 
-              <Link
-                onClick={() => setOpenNav(!OpenNav)}
-                className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700"
-                href="/services"
-              >
-                Our Services
-              </Link>
+             
               <Link
                 onClick={() => setOpenNav(!OpenNav)}
                 className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700"
@@ -64,7 +64,7 @@ export default function Header() {
               <Link
                 onClick={() => setOpenNav(!OpenNav)}
                 className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700"
-                href="/press"
+                href={`${origin}/#clients`}
               >
                 Press
               </Link>
