@@ -14,7 +14,7 @@ export default function LocationBox({ post }) {
             <div className="my-5 text-center">
                 <Link
                     href="#"
-                    className="text-xs px-2 font-montserrat py-1 text-white bg-black hover:bg-white hover:text-black border-2 border-black"
+                    className="text-xs px-2 font-montserrat uppercase py-1 font-extralight tracking-widest text-white bg-black hover:bg-white hover:text-black border-2 border-black"
                 >
                     Make Appointment
                 </Link>
@@ -22,7 +22,7 @@ export default function LocationBox({ post }) {
                     {post?.name}
                 </h3>
                 <h5 className="font-montserrat font-light text-sm my-3">{post?.address}</h5>
-                <Link href={`tel:${post.num}`} className="font-montserrat font-normal text-sm">
+                <Link href={`tel:${post.num}`} className="font-montserrat font-bold text-sm">
                     {post?.num}
                 </Link>
             </div>
