@@ -42,10 +42,17 @@ export const Locations_data = [
           link: '#'
      },
      {
+          name: 'The Forum',
+          address: '5145 Peachtree Parkway Suite 451 Norcross, GA 30092',
+          image: '/images/the-forum-1024x445.jpeg',
+          num: '4042284955',
+          link: 'https://go.booker.com/location/SugarcoatForum'
+     },
+     {
           name: 'Phipps Plaza',
           address: '3500 Peachtree Rd. NE #2061C, Atlanta, GA 30306',
           image: '/images/location6.png',
-          num: '4048555507',
+          num: '4705451830',
           link: 'https://go.booker.com/location/SugarcoatPhippsPlaza/service-menu'
      },
      {
@@ -61,5 +68,33 @@ export const Locations_data = [
           image: '/images/location8.png',
           num: '6787854256',
           link: 'https://go.booker.com/location/hairbarbysugarcoat'
+     },
+     {
+          name: 'Sandy Springs',
+          address: '6400 Blue Stone Rd NE Sandy Springs, GA 30328 ',
+          image: '/images/Sugarcoat-Sandy-Springs-s.jpeg',
+          num: '4042542962',
+          link: 'https://go.booker.com/location/SugarcoatBeauty'
+     },
+     {
+          name: 'Trilith – Coming 2023',
+          address: '290 Heatherden Avenue Fayetteville, GA 30214 ',
+          image: '/images/vinnings-1-copy.jpeg',
+          num: '',
+          link: 'https://www.trilith.com//shop-and-dine'
+     },
+     {
+          name: 'Sugarcoat High Street – Coming 2023',
+          address: 'Dunwoody, GA 30346',
+          image: '/images/vinnings-1-copy.jpeg',
+          num: '',
+          link: 'https://highstreetatlanta.com/film/'
+     },
+     {
+          name: 'Sugarcoat Corso Atlanta – Now Open',
+          address: '',
+          image: '/images/photo-1-300x130.jpeg',
+          num: '',
+          link: '#'
      },
 ]
