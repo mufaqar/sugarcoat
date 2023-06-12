@@ -33,7 +33,7 @@ export default function Banner({ image, title, sub_title }) {
             <ul className="absolute bg-gray-50 w-full text-gray-500 font-light mt-1 font-montserrat">
               {
                 Locations_data.map((item, idx)=>{
-                  return <li key={idx} className={`py-1 border-b-[1px] hover:bg-black hover:text-white border-gray-200 ${idx === 0 && 'border-t-[1px]'}`}><Link href={item?.link} target="_blank">{item?.name}</Link></li>
+                  return <li key={idx} className={`py-1 border-b-[1px] hover:bg-black uppercase text-[15px] hover:text-white border-gray-200 ${idx === 0 && 'border-t-[1px]'}`}><Link href={item?.link} target="_blank">{item?.name}</Link></li>
                 })
               }
             </ul>
