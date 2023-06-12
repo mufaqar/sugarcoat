@@ -46,7 +46,7 @@ export default function Home() {
         </div>
         <div className="container mx-auto mt-10 text-center"  >
           <Link
-            href="/services"
+            href="/locations"
             className="md:text-lg text-xs px-5 font-montserrat mt-5 mb-10 py-2 text-white bg-black hover:bg-white hover:text-black border-2 border-black"
           >
             More Services
