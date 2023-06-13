@@ -33,23 +33,23 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="services" className='px-4'>
-        <div className="md:mt-40 mt-20 container mx-auto"  >
-          <h2 className="font-kammerlander text-4xl font-light text-center">OUR SERVICE</h2>
+      <section id="services" className="px-4">
+        <div className="md:mt-40 mt-20 container mx-auto">
+          <h2 className="font-kammerlander text-4xl font-light text-center">
+            OUR SERVICE
+          </h2>
         </div>
         <div className="grid grid-cols-1 md:gap-y-20 gap-10 px-10 md:mt-20 mt-10 sm:grid-cols-2 lg:grid-cols-3 container mx-auto">
           {Services.map((post, idx) => {
-            return (
-              <ServiceBox post={post} key={idx} />
-            );
+            return <ServiceBox post={post} key={idx} />;
           })}
         </div>
-        <div className="container mx-auto mt-10 text-center"  >
+        <div className="container mx-auto mt-10 text-center">
           <Link
             href="/locations"
             className="md:text-lg text-xs px-5 font-montserrat mt-5 mb-10 py-2 text-white bg-black hover:bg-white hover:text-black border-2 border-black"
           >
-            More Services
+            Locations
           </Link>
         </div>
       </section>
@@ -99,8 +99,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='bg-[#F7F6F6] py-28 mt-20' id="testimonials">
-        <div className="" >
+      <section className="bg-[#F7F6F6] py-28 mt-20" id="testimonials">
+        <div className="">
           <h2 className="font-kammerlander text-4xl text-center">
             CLIENT <br /> TESTIMONIALS
           </h2>
@@ -109,12 +109,12 @@ export default function Home() {
           <div className="md:mt-20 mt-10 text-center ">
             <hr className="border-black" />
             <p className="mt-10 text-sm font-normal font-montserrat">
-              "I LOVE GOING TO SUGARCOAT IN ATLANTA-THEIR MENU IS PERFECT. IF I'M
-              ON THE GO, I'LL POP IN FOR A QUICK EXPRESS MANICURE. ON DAYS WHEN I
-              HAVE TIME TO RELAX, I'LL PAMPER MYSELF WITH THEIR SIGNAGTURE
-              MANI-PEDI, COMPLETE WITH THE SALON'S SUGARCOAT SUGAR SCRUB. PLUS, I
-              LOVE THE PINK AND WHITE DECOR AT THE BUCKHEAD LOCATION. IT'S VERY
-              GIRLIE AND REMINDS ME OF THE SPANX OFFICES! "
+              "I LOVE GOING TO SUGARCOAT IN ATLANTA-THEIR MENU IS PERFECT. IF
+              I'M ON THE GO, I'LL POP IN FOR A QUICK EXPRESS MANICURE. ON DAYS
+              WHEN I HAVE TIME TO RELAX, I'LL PAMPER MYSELF WITH THEIR
+              SIGNAGTURE MANI-PEDI, COMPLETE WITH THE SALON'S SUGARCOAT SUGAR
+              SCRUB. PLUS, I LOVE THE PINK AND WHITE DECOR AT THE BUCKHEAD
+              LOCATION. IT'S VERY GIRLIE AND REMINDS ME OF THE SPANX OFFICES! "
             </p>
             <h4 className="mt-10 text-base font-medium font-montserrat">
               SARA BLAKELY
@@ -125,12 +125,12 @@ export default function Home() {
           <div className="md:mt-20 mt-10 text-center">
             <hr className="border-black" />
             <p className="mt-10 text-sm font-normal font-montserrat">
-              "BOOST YOUR PRODUCT AND SERVICE'S CREDIBILITY BY ADDING TESTIMONIALS
-              FROM YOUR CLIENTS.
+              "BOOST YOUR PRODUCT AND SERVICE'S CREDIBILITY BY ADDING
+              TESTIMONIALS FROM YOUR CLIENTS.
               <br />
               <br />
-              PEOPLE LOVE RECOMMENDATIONS SO FEEDBACK FROM OTHERS WHO'VE TRIED IT
-              IS INVALUABLE."
+              PEOPLE LOVE RECOMMENDATIONS SO FEEDBACK FROM OTHERS WHO'VE TRIED
+              IT IS INVALUABLE."
             </p>
             <h4 className="mt-10 text-base font-medium font-montserrat">
               ERICA BOGART
@@ -141,9 +141,9 @@ export default function Home() {
           <div className="md:mt-20 mt-10 text-center">
             <hr className="border-black" />
             <p className="mt-10 text-sm font-normal font-montserrat">
-              "BOOST YOUR PRODUCT AND SERVICE'S CREDIBILITY BY ADDING TESTIMONIALS
-              FROM YOUR CLIENTS. FEEDBACK FROM OTHERS WHO'VE TRIED IT IS
-              INVALUABLE. "
+              "BOOST YOUR PRODUCT AND SERVICE'S CREDIBILITY BY ADDING
+              TESTIMONIALS FROM YOUR CLIENTS. FEEDBACK FROM OTHERS WHO'VE TRIED
+              IT IS INVALUABLE. "
             </p>
             <h4 className="mt-10 text-base font-medium font-montserrat">
               BRENDA WOOD
@@ -156,7 +156,9 @@ export default function Home() {
 
       <section className="md:py-20 py-10 bg-[#252527] px-4" id="about">
         <div className="text-center text-white container mx-auto">
-          <h5 className="font-extralight text-sm font-montserrat">ABOUT THE BRAND</h5>
+          <h5 className="font-extralight text-sm font-montserrat">
+            ABOUT THE BRAND
+          </h5>
           <h2 className="mb-7 mt-24 font-light text-[38px] leading-[44px] md:text-[80px] md:leading-[93px] font-kammerlander">
             WE TAKE CARE OF <br /> OUR CLIENTS AND <br /> OUR PEOPLE.
           </h2>
@@ -225,9 +227,7 @@ export default function Home() {
           />
         </figure>
       </div>
-      <section id="contact">
-
-      </section>
+      <section id="contact"></section>
       <Footer />
     </>
   );
