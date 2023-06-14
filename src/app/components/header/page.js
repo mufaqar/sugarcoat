@@ -1,17 +1,18 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
+import Image from "next/image";
 //import { Services } from '../../public/servises-data';
-import React, { useState } from 'react';
-import Link from 'next/link';
+import React, { useState } from "react";
+import Link from "next/link";
+import { Locations_data } from "../../../../public/locations";
 
 export default function Header() {
   const [OpenNav, setOpenNav] = useState(false);
   const origin =
-  typeof window !== 'undefined' && window.location.origin
-  ? window.location.origin
-  : '';
-
+    typeof window !== "undefined" && window.location.origin
+      ? window.location.origin
+      : "";
+  const [open, setOpenLocation] = useState(false);
 
   return (
     <>
@@ -21,11 +22,11 @@ export default function Header() {
           onClick={() => setOpenNav(!OpenNav)}
         >
           <Image
-            src={OpenNav ? '/svg/x.svg' : '/svg/menu.svg'}
+            src={OpenNav ? "/svg/x.svg" : "/svg/menu.svg"}
             alt="menu"
             width={100}
             height={100}
-            className={OpenNav ? 'w-12 h-12 p-1' : 'w-12 h-12'}
+            className={OpenNav ? "w-12 h-12 p-1" : "w-12 h-12"}
           />
         </figure>
         {OpenNav && (
@@ -46,7 +47,6 @@ export default function Header() {
                 About Us
               </Link>
 
-             
               <Link
                 onClick={() => setOpenNav(!OpenNav)}
                 className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700"
@@ -80,7 +80,7 @@ export default function Header() {
                 className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700"
                 href="https://squareup.com/gift/MLJMBMXBCCDA2/order"
               >
-                GIFT CARDS
+                Gift Cards
               </Link>
 
               <Link
@@ -98,12 +98,30 @@ export default function Header() {
                 Contact us
               </Link>
               <Link
-                onClick={() => setOpenNav(!OpenNav)}
+                onClick={() => setOpenLocation(!open)}
                 className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700"
-                href="https://go.booker.com/location/sugarcoatbuckhead/"
+                href="#"
               >
                 Make Appointment
               </Link>
+
+              {open && (
+                <ul className="flex flex-col gap-4 font-boxley ">
+                  {Locations_data.map((item, idx) => {
+                    return (
+                      <li
+                        key={idx}
+                        className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700"
+                        
+                      >
+                        <Link href={item?.link} target="_blank" onClick={() => {setOpenNav(!OpenNav);setOpenLocation(!open)}}>
+                          {item?.name}
+                        </Link>
+                      </li>
+                    );
+                  })}
+                </ul>
+              )}
             </nav>
           </div>
         )}
