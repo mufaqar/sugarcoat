@@ -37,7 +37,7 @@ export default function Header() {
           />
         </figure>
         {OpenNav && (
-          <div className="absolute  w-full md:w-[380px] px-6 right-0  top-20">
+          <div className="absolute  w-full md:w-[380px] px-6 right-0 z-10  top-20">
             <nav className="flex flex-col bg-white/60 gap-4 font-boxley text-xl p-6 rounded-2xl overflow-hidden">
               <Link
                 onClick={() => setOpenNav(!OpenNav)}
@@ -111,13 +111,29 @@ export default function Header() {
               >
                 Make Appointment
               </Link>
-
+              {open && (
+                <ul className=" md:hidden flex flex-col gap-4 font-boxley text-xl">
+                  {Locations_data.map((item, idx) => {
+                    return (
+                      <li
+                        key={idx}
+                        className="transition-all duration-300 ease-in-out hover:text-green-700"
+                        
+                      >
+                        <Link href={item?.link} target="_blank" onClick={() => {setOpenNav(!OpenNav);setOpenLocation(!open)}}>
+                          {item?.name}
+                        </Link>
+                      </li>
+                    );
+                  })}
+                </ul>
+              )}
               
             </nav>
           </div>
         )}
         {open && (
-          <ul className="absolute -bottom-96 right-96 z-10 flex flex-col bg-white gap-4 font-boxley text-xl p-6 rounded-2xl overflow-hidden">
+          <ul className="absolute -bottom-96 hidden right-96 z-10 md:flex flex-col bg-white gap-4 font-boxley text-xl p-6 rounded-2xl overflow-hidden">
             {Locations_data.map((item, idx) => {
               return (
                 <li
