@@ -13,13 +13,20 @@ export default function Header() {
       ? window.location.origin
       : "";
   const [open, setOpenLocation] = useState(false);
-
+  const handleMenu =()=>{
+    if(open){
+      setOpenLocation(false)
+      setOpenNav(!OpenNav)
+    }else{
+      setOpenNav(!OpenNav)
+    }
+  }
   return (
     <>
       <header className=" w-full">
         <figure
           className="bg-white/30 p-1 absolute right-4 top-4 rounded-full"
-          onClick={() => setOpenNav(!OpenNav)}
+          onClick={handleMenu}
         >
           <Image
             src={OpenNav ? "/svg/x.svg" : "/svg/menu.svg"}
@@ -105,25 +112,26 @@ export default function Header() {
                 Make Appointment
               </Link>
 
-              {open && (
-                <ul className="flex flex-col gap-4 font-boxley ">
-                  {Locations_data.map((item, idx) => {
-                    return (
-                      <li
-                        key={idx}
-                        className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700"
-                        
-                      >
-                        <Link href={item?.link} target="_blank" onClick={() => {setOpenNav(!OpenNav);setOpenLocation(!open)}}>
-                          {item?.name}
-                        </Link>
-                      </li>
-                    );
-                  })}
-                </ul>
-              )}
+              
             </nav>
           </div>
+        )}
+        {open && (
+          <ul className="absolute -bottom-96 right-96 z-10 flex flex-col bg-white gap-4 font-boxley text-xl p-6 rounded-2xl overflow-hidden">
+            {Locations_data.map((item, idx) => {
+              return (
+                <li
+                  key={idx}
+                  className="transition-all duration-300 ease-in-out hover:text-green-700"
+                  
+                >
+                  <Link href={item?.link} target="_blank" onClick={() => {setOpenNav(!OpenNav);setOpenLocation(!open)}}>
+                    {item?.name}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
         )}
       </header>
     </>
