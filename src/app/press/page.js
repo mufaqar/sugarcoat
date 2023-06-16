@@ -3,7 +3,6 @@ import Header from '../components/header/page';
 import Banner from '../components/main/banner';
 
 export default function Events() {
-  // const [OpenNav, setOpenNav] = useState(false);
   return (
     <>
       <Header />

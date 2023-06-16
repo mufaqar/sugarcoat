@@ -1,10 +1,31 @@
+"use client"
+
+import { AllLocations } from '@/config/queries';
 import { Locations_data } from '../../../public/locations';
 import Footer from '../components/footer/page';
 import Header from '../components/header/page';
 import LocationBox from '../components/location-box/location';
 import Banner from '../components/main/banner';
+import { useEffect, useState } from 'react';
+import axios from 'axios';
 
 export default function Locations() {
+
+  const [allLocation, setAllLocations] = useState();
+
+  useEffect(() => {
+    axios
+      .post("https://staging.sugarcoatbeauty.com/graphql", {
+        query: AllLocations,
+      })
+      .then((response) => {
+        setAllLocations(response.data.data.locations.nodes);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  }, []);
+
   return (
     <>
       <Header />
@@ -20,7 +41,7 @@ export default function Locations() {
           </h2>
         </div>
         <div className="grid grid-cols-1 gap-10 px-10 mt-10 sm:grid-cols-2 lg:grid-cols-3 container mx-auto">
-          {Locations_data.map((post, idx) => {
+          {allLocation?.map((post, idx) => {
             return (
               <LocationBox post={post} key={idx} />
             );

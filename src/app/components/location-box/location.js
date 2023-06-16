@@ -6,8 +6,8 @@ export default function LocationBox({ post }) {
     <div className="w-full p-5 bg-white border border-black">
       <div className="h-[262px]">
         <img
-          src={post?.image}
-          alt={post?.name}
+          src={post?.featuredImage?.node?.mediaItemUrl          }
+          alt={post?.title}
           className="border border-black w-full h-full object-cover"
         />
       </div>
@@ -19,16 +19,15 @@ export default function LocationBox({ post }) {
           Make Appointment
         </Link>
         <h3 className="text-lg font-normal font-kammerlander mt-3">
-          {post?.name}
+          {post?.title}
         </h3>
-        <h5 className="font-montserrat font-light text-sm my-3">
-          {post?.address}
-        </h5>
+        <div className="font-montserrat font-light text-sm my-3" dangerouslySetInnerHTML={{ __html: post?.content }}/>
+          
         <Link
-          href={`tel:${post.num}`}
+          href={`tel:${post.locationFields?.mobileNumber}`}
           className="font-montserrat font-bold text-sm"
         >
-          {post?.num}
+          {post?.locationFields?.mobileNumber          }
         </Link>
       </div>
     </div>

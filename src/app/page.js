@@ -1,15 +1,31 @@
-'use client';
-import Image from 'next/image';
-import { Services } from '../../public/servises-data';
-import React, { useState } from 'react';
-import Header from './components/header/page';
-import Footer from './components/footer/page';
-import ServiceBox from './components/service-box/service';
-import Banner from './components/main/banner';
-import Link from 'next/link';
+"use client"
+
+import Image from "next/image";
+import React, { useEffect, useState } from "react";
+import Header from "./components/header/page";
+import Footer from "./components/footer/page";
+import Banner from "./components/main/banner";
+import ServicesComponent from "./components/services";
+import { AllPress } from "@/config/queries";
+import axios from "axios";
 
 export default function Home() {
-  const [OpenNav, setOpenNav] = useState(false);
+
+  const [allPress, setAllPress] = useState();
+
+  useEffect(() => {
+    axios
+      .post("https://staging.sugarcoatbeauty.com/graphql", {
+        query: AllPress,
+      })
+      .then((response) => {
+        setAllPress(response.data.data.allPress.nodes);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  }, []);
+
   return (
     <>
       <Header />
@@ -33,26 +49,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="services" className="px-4">
-        <div className="md:mt-40 mt-20 container mx-auto">
-          <h2 className="font-kammerlander text-4xl font-light text-center">
-            OUR SERVICE
-          </h2>
-        </div>
-        <div className="grid grid-cols-1 md:gap-y-20 gap-10 px-10 md:mt-20 mt-10 sm:grid-cols-2 lg:grid-cols-3 container mx-auto">
-          {Services.map((post, idx) => {
-            return <ServiceBox post={post} key={idx} />;
-          })}
-        </div>
-        <div className="container mx-auto mt-10 text-center">
-          <Link
-            href="/locations"
-            className="md:text-lg text-xs px-5 font-montserrat mt-5 mb-10 py-2 text-white bg-black hover:bg-white hover:text-black border-2 border-black"
-          >
-            Locations
-          </Link>
-        </div>
-      </section>
+      <ServicesComponent />
 
       <section className="flex flex-col md:flex-row gap-5 px-10 md:mt-40 mt-10 container mx-auto">
         <div className="py-5 lg:max-w-[35%] w-full">
@@ -175,57 +172,16 @@ export default function Home() {
         id="clients"
         className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 container mx-auto px-10 my-20 logo"
       >
-        <figure className="flex justify-center items-center">
-          <img
-            src="/images/Jezebel_Best_of Atlanta_2023_SugarcoatBeauty.jpg"
-            alt=""
-          />
-        </figure>
-        <figure className="flex justify-center items-center">
-          <img
-            src="/images/Atlantan_Best_The_City_Winner_SugarcoatBeauty.jpg"
-            alt=""
-          />
-        </figure>
-        <figure className="flex justify-center items-center">
-          <img src="/images/Atlanta_Best_Of_ATL_SugarcoatBeauty.jpg" alt="" />
-        </figure>
-        <figure className="flex justify-center items-center">
-          <img
-            src="/images/Jezebel_Best_of_Atlanta_2021_Winner_SugarcoatBeauty.jpg"
-            alt=""
-          />
-        </figure>
-        <figure className="flex justify-center items-center">
-          <img src="/images/Best_2018_Winner_SugarcoatBeauty.jpg" alt="" />
-        </figure>
-        <figure className="flex justify-center items-center">
-          <img
-            src="/images/Modern_Luxury_Weddings_2022_Exclusive_Mnmber_SugarcoatBeauty.jpg"
-            alt=""
-          />
-        </figure>
-        <figure className="flex justify-center items-center">
-          <img
-            src="/images/Best_of_Bestself_2021_Best_Nail_Salon_SugarcoatBeauty.jpg"
-            alt=""
-          />
-        </figure>
-        <figure className="flex justify-center items-center">
-          <img src="/images/Best_of_Atlanta_SugarcoatBeauty.jpg" alt="" />
-        </figure>
-        <figure className="flex justify-center items-center">
-          <img
-            src="/images/Best_of_Bestself_2020_Best_Nail_Salon_SugarcoatBeauty.jpg"
-            alt=""
-          />
-        </figure>
-        <figure className="flex justify-center items-center">
-          <img
-            src="/images/Jezebel_Best_of Atlanta_2017_Best_Manis_and_Pedis_SugarcoatBeauty.jpg"
-            alt=""
-          />
-        </figure>
+        {allPress?.map((item, idx) => {
+          return (
+            <figure key={idx} className="flex justify-center items-center">
+              <img
+                src={item?.featuredImage?.node?.mediaItemUrl}
+                alt={item?.featuredImage?.node?.altText}
+              />
+            </figure>
+          );
+        })}
       </div>
       <section id="contact"></section>
       <Footer />
