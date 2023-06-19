@@ -3,6 +3,10 @@ import Footer from "../components/footer/page";
 import Header from "../components/header/page";
 import Banner from "../components/main/banner";
 
+
+
+
+
 export default function Products() {
   // const [OpenNav, setOpenNav] = useState(false);
   return (
