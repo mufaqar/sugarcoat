@@ -105,30 +105,33 @@ export default function Header() {
                 Contact us
               </Link>
               <Link
-                onClick={() => setOpenLocation(!open)}
-                className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700"
+                onMouseEnter={() => setOpenLocation(true)}
+                onMouseLeave={() => setOpenLocation(false)}
+                className=" transition-all  duration-300 ease-in-out hover:text-green-700"
                 href="#"
               >
-                Make Appointment
-              </Link>
+                <span>Make Appointment</span>
+             
               {open && (
-                <ul className="flex md:absolute md:bg-gray-100 md:-left-[25rem] top-[25rem] md:p-6 md:rounded-2xl flex-col gap-4 font-boxley text-xl">
-                  {Locations_data.map((item, idx) => {
-                    return (
-                      <li
-                        key={idx}
-                        className="transition-all duration-300 ease-in-out hover:text-green-700"
-                        
-                      >
-                        <Link href={item?.link} target="_blank" onClick={() => {setOpenNav(!OpenNav);setOpenLocation(!open)}}>
-                          {item?.name}
-                        </Link>
-                      </li>
-                    );
-                  })}
-                </ul>
+                <div className="md:absolute md:-left-[26rem] top-[20rem]">
+                <ul className="flex md:bg-gray-100 md:p-6 m-6 md:rounded-2xl flex-col gap-4 font-boxley text-xl">
+                {Locations_data.map((item, idx) => {
+                  return (
+                    <li
+                      key={idx}
+                      className="transition-all duration-300 ease-in-out hover:text-green-700"
+                      
+                    >
+                      <Link href={item?.link} target="_blank" onClick={() => {setOpenNav(!OpenNav);setOpenLocation(!open)}}>
+                        {item?.name}
+                      </Link>
+                    </li>
+                  );
+                })}
+              </ul>
+                </div>
               )}
-              
+              </Link>
             </nav>
           </div>
         )}

@@ -1,9 +1,32 @@
+"use client"
+
 import Footer from "../components/footer/page";
 import Header from "../components/header/page";
 import Banner from "../components/main/banner";
+import { useForm } from "react-hook-form"
 
 export default function Events() {
-  // const [OpenNav, setOpenNav] = useState(false);
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm()
+
+  const onSubmit = (data) => {
+    fetch('/api/sendmail', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json, text/plain, */*',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    })
+  }
+
+
+
+
   return (
     <>
       <Header />
@@ -17,50 +40,54 @@ export default function Events() {
         Contact Us
         </h2>
         
-        <form>
-          <div class="mb-6">
+        <form onSubmit={handleSubmit(onSubmit)}>
+          <div className="mb-6">
             <label
               for="default-input"
-              class="block mt-5 mb-2 text-sm font-medium text-gray-900"
+              className="block mt-5 mb-2 text-sm font-medium text-gray-900"
             >
               Your Name
             </label>
             <input
               type="text"
               id="default-input"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
+              {...register("name", { required: true })}
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
             />
             <label
               for="default-input"
-              class="block mt-5 mb-2 text-sm font-medium text-gray-900"
+              className="block mt-5 mb-2 text-sm font-medium text-gray-900"
             >
               Your Email
             </label>
             <input
               type="email"
               id="default-input"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
+              {...register("email", { required: true })}
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
             />
             <label
               for="default-input"
-              class="block mt-5 mb-2 text-sm font-medium text-gray-900"
+              className="block mt-5 mb-2 text-sm font-medium text-gray-900"
             >
               Phone Number
             </label>
             <input
               type="number"
               id="default-input"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
+              {...register("number", { required: true })}
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
             />
             <label
               for="default-input"
-              class="block mt-5 mb-2 text-sm font-medium text-gray-900"
+              className="block mt-5 mb-2 text-sm font-medium text-gray-900"
             >
               Appointment Location
             </label>
             <select
               id="countries"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
+              {...register("appointment_location", { required: true })}
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
             >
               <option selected>Vinings</option>
               <option value="US">Buckhead</option>
@@ -69,26 +96,28 @@ export default function Events() {
 
             <label
               for="default-input"
-              class="block mt-5 mb-2 text-sm font-medium text-gray-900"
+              className="block mt-5 mb-2 text-sm font-medium text-gray-900"
             >
               Subject
             </label>
             <input
               type="text"
               id="default-input"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
+              {...register("Subject", { required: true })}
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
             />
 
             <label
               for="message"
-              class="block mt-5 mb-2 text-sm font-medium text-gray-900"
+              className="block mt-5 mb-2 text-sm font-medium text-gray-900"
             >
               Message
             </label>
             <textarea
               id="message"
               rows="4"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
+              {...register("message", { required: true })}
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
               placeholder="Write your thoughts here..."
             ></textarea>
           </div>
