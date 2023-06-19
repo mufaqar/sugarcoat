@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "SUGARCOAT | WE MAKE LIFE SWEETER",
   icons: {
-    icon: '/favicon.ico',
+    icon: '/icon.png',
   },
 };
 
