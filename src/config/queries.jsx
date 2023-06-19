@@ -49,3 +49,21 @@ query AllPress {
      }
    }
 `
+
+
+export const AllProducts = `
+query AllProducts {
+  products {
+    nodes {
+      productFields {
+        link
+      }
+      featuredImage {
+        node {
+          mediaItemUrl
+        }
+      }
+    }
+  }
+}
+`

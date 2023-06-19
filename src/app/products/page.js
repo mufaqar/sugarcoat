@@ -1,14 +1,31 @@
+"use client"
+
 import Link from "next/link";
 import Footer from "../components/footer/page";
 import Header from "../components/header/page";
 import Banner from "../components/main/banner";
-
-
-
+import { AllProducts } from "@/config/queries";
+import React from 'react'
+import axios from "axios";
 
 
 export default function Products() {
-  // const [OpenNav, setOpenNav] = useState(false);
+
+  const [allProducts, setAllProducts] = React.useState();
+  console.log("🚀 ~ file: page.js:14 ~ Products ~ allProducts:", allProducts)
+  React.useEffect(() => {
+    axios
+      .post("https://staging.sugarcoatbeauty.com/graphql", {
+        query: AllProducts,
+      })
+      .then((response) => {
+        setAllProducts(response.data.data.products.nodes);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  }, []);
+
   return (
     <>
       <Header />
@@ -25,11 +42,11 @@ export default function Products() {
         id="products"
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 px-10 my-20 gap-5 logo"
       >
-        {product?.map((item, idx) => {
+        {allProducts?.map((item, idx) => {
           return (
-            <Link href={item?.link} target="_blank" key={idx} className="flex justify-center items-center">
+            <Link href={item?.productFields?.link} target="_blank" key={idx} className="flex justify-center items-center">
               <img
-                src={item?.image}
+                src={item?.featuredImage?.node?.mediaItemUrl}
                 alt={`Product Image`}
                 className="w-full h-full"
               />
