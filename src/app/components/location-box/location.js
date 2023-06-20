@@ -13,8 +13,9 @@ export default function LocationBox({ post }) {
       </div>
       <div className="my-5 text-center">
         <Link
-          href="#"
-          className="text-xs hidden px-2 font-montserrat uppercase py-1 font-extralight tracking-widest text-white bg-black hover:bg-white hover:text-black border-2 border-black"
+          href={post.locationFields?.appoinmentLink}
+          target="_blank"
+          className="text-xs  px-2 font-montserrat uppercase py-1 font-extralight tracking-widest text-white bg-black hover:bg-white hover:text-black border-2 border-black"
         >
           Make Appointment
         </Link>

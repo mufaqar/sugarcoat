@@ -29,6 +29,7 @@ query AllLocations {
          content
          locationFields {
            mobileNumber
+           appoinmentLink
          }
        }
      }
