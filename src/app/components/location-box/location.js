@@ -19,7 +19,7 @@ export default function LocationBox({ post }) {
         >
           Make Appointment
         </Link>
-        <h3 className="text-lg font-normal font-kammerlander mt-3">
+        <h3 className="text-2xl text-gray-600 font-normal font-kammerlander mt-3">
           {post?.title}
         </h3>
         <div className="font-montserrat font-light text-sm my-3" dangerouslySetInnerHTML={{ __html: post?.content }}/>

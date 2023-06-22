@@ -27,7 +27,7 @@ export default function Banner({ image, title, sub_title }) {
           onMouseLeave={() => setOpen(false)}
         >
           <span className="md:text-lg text-xs px-5 font-montserrat py-2 text-black bg-white hover:bg-black hover:text-white">
-            BOOK AN APPOINTMENT
+            <a href="#locations">BOOK AN APPOINTMENT</a>
           </span>
           {open && (
             <ul className="absolute bg-gray-50 w-full text-gray-500 font-light mt-1 font-montserrat">

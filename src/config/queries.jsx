@@ -11,6 +11,9 @@ query AllServices {
              mediaItemUrl
            }
          }
+         servicesFields {
+          info
+        }
        }
      }
    }

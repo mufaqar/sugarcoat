@@ -21,6 +21,9 @@ export default function Header() {
       setOpenNav(!OpenNav)
     }
   }
+
+
+
   return (
     <>
       <header className=" w-full">
@@ -49,7 +52,7 @@ export default function Header() {
               <Link
                 onClick={() => setOpenNav(!OpenNav)}
                 className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700"
-                href="/about"
+                href={`${typeof window !== 'undefined' && window.location.origin ? window.location.origin : ''}/#vision`}
               >
                 About Us
               </Link>
@@ -57,7 +60,7 @@ export default function Header() {
               <Link
                 onClick={() => setOpenNav(!OpenNav)}
                 className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700"
-                href="/locations"
+                href={`${typeof window !== 'undefined' && window.location.origin ? window.location.origin : ''}/#locations`}
               >
                 Locations
               </Link>
@@ -86,6 +89,7 @@ export default function Header() {
                 onClick={() => setOpenNav(!OpenNav)}
                 className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700"
                 href="https://squareup.com/gift/MLJMBMXBCCDA2/order"
+                target="_blank"
               >
                 Gift Cards
               </Link>

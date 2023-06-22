@@ -6,12 +6,14 @@ import Header from "./components/header/page";
 import Footer from "./components/footer/page";
 import Banner from "./components/main/banner";
 import ServicesComponent from "./components/services";
-import { AllPress } from "@/config/queries";
+import { AllLocations, AllPress } from "@/config/queries";
 import axios from "axios";
+import LocationBox from "./components/location-box/location";
 
 export default function Home() {
 
   const [allPress, setAllPress] = useState();
+  const [allLocation, setAllLocations] = useState();
 
   useEffect(() => {
     axios
@@ -20,6 +22,20 @@ export default function Home() {
       })
       .then((response) => {
         setAllPress(response.data.data.allPress.nodes);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  }, []);
+
+
+  useEffect(() => {
+    axios
+      .post("https://staging.sugarcoatbeauty.com/graphql", {
+        query: AllLocations,
+      })
+      .then((response) => {
+        setAllLocations(response.data.data.locations.nodes);
       })
       .catch((error) => {
         console.error(error);
@@ -50,6 +66,21 @@ export default function Home() {
       </section>
 
       <ServicesComponent />
+
+      <section id="locations" className='mb-16 mt-20'>
+        <div className="mt-10 container mx-auto"  >
+          <h2 className="font-kammerlander text-4xl font-light text-center">
+            OUR LOCATIONS
+          </h2>
+        </div>
+        <div className="grid grid-cols-1 gap-10 px-10 mt-20 sm:grid-cols-2 lg:grid-cols-3 container mx-auto">
+          {allLocation?.map((post, idx) => {
+            return (
+              <LocationBox post={post} key={idx} />
+            );
+          })}
+        </div>
+      </section>
 
       <section className="flex flex-col md:flex-row gap-5 px-10 md:mt-40 mt-10 container mx-auto">
         <div className="py-5 lg:max-w-[35%] w-full">
