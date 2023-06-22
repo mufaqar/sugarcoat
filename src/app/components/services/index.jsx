@@ -29,7 +29,7 @@ const ServicesComponent = () => {
     <section id="services" className="px-4">
       <div className="md:mt-20 mt-20 container mx-auto">
         <h2 className="font-kammerlander text-4xl font-light text-center">
-          OUR SERVICE
+          OUR SERVICES
         </h2>
       </div>
       <div className="grid grid-cols-1 md:gap-y-20 gap-10 px-10 mt-20 sm:grid-cols-2 lg:grid-cols-3 container mx-auto">
