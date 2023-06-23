@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import React from 'react';
+import Link from "next/link";
+import React from "react";
 
 export default function LocationBox({ post }) {
   return (
@@ -12,7 +12,6 @@ export default function LocationBox({ post }) {
         />
       </div>
       <div className="my-5 text-center">
-       
         <h3 className="text-xl text-gray-600 font-normal font-kammerlander mt-3">
           {post?.title}
         </h3>
@@ -27,16 +26,16 @@ export default function LocationBox({ post }) {
         >
           {post?.locationFields?.mobileNumber}
         </Link>
-        
-       <div>
-       <Link
-       href={post.locationFields?.appoinmentLink}
-       target="_blank"
-       className="text-xs  px-2 font-montserrat uppercase py-1 font-extralight tracking-widest text-black underline"
-     >
-       Make Appointment
-     </Link>
-       </div>
+
+        <div>
+          <Link
+            href={post.locationFields?.appoinmentLink}
+            target="_blank"
+            className="text-xs px-2 font-montserrat uppercase py-1 font-extralight tracking-widest text-black underline"
+          >
+            Make Appointment
+          </Link>
+        </div>
       </div>
     </div>
   );
