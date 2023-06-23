@@ -41,17 +41,17 @@ export default function Header() {
         </figure>
         {OpenNav && (
           <div className="absolute  w-full md:w-[380px] px-6 right-0 z-10  top-20">
-            <nav className="flex flex-col bg-white/60 gap-4 font-boxley text-xl p-6 rounded-2xl overflow-hidden">
+            <nav className="flex flex-col bg-white/60 gap-4 font-semibold text-2xl p-6 rounded-2xl overflow-hidden">
               <Link
                 onClick={() => setOpenNav(!OpenNav)}
-                className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700"
+                className="hover:tracking-widest font-kammerlander transition-all duration-300 ease-in-out hover:text-green-700"
                 href="/"
               >
                 Home
               </Link>
               <Link
                 onClick={() => setOpenNav(!OpenNav)}
-                className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700"
+                className="hover:tracking-widest font-kammerlander transition-all duration-300 ease-in-out hover:text-green-700"
                 href={`${typeof window !== 'undefined' && window.location.origin ? window.location.origin : ''}/#vision`}
               >
                 About Us
@@ -59,35 +59,35 @@ export default function Header() {
 
               <Link
                 onClick={() => setOpenNav(!OpenNav)}
-                className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700"
+                className="hover:tracking-widest font-kammerlander transition-all duration-300 ease-in-out hover:text-green-700"
                 href={`${typeof window !== 'undefined' && window.location.origin ? window.location.origin : ''}/#locations`}
               >
                 Locations
               </Link>
               <Link
                 onClick={() => setOpenNav(!OpenNav)}
-                className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700"
+                className="hover:tracking-widest font-kammerlander transition-all duration-300 ease-in-out hover:text-green-700"
                 href="/events"
               >
                 Parties /Events
               </Link>
               <Link
                 onClick={() => setOpenNav(!OpenNav)}
-                className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700"
+                className="hover:tracking-widest font-kammerlander transition-all duration-300 ease-in-out hover:text-green-700"
                 href={`${origin}/#clients`}
               >
                 Press
               </Link>
               <Link
                 onClick={() => setOpenNav(!OpenNav)}
-                className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700"
+                className="hover:tracking-widest font-kammerlander transition-all duration-300 ease-in-out hover:text-green-700"
                 href="/products"
               >
                 Products
               </Link>
               <Link
                 onClick={() => setOpenNav(!OpenNav)}
-                className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700"
+                className="hover:tracking-widest font-kammerlander transition-all duration-300 ease-in-out hover:text-green-700"
                 href="https://squareup.com/gift/MLJMBMXBCCDA2/order"
                 target="_blank"
               >
@@ -96,23 +96,23 @@ export default function Header() {
 
               <Link
                 onClick={() => setOpenNav(!OpenNav)}
-                className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700"
+                className="hover:tracking-widest font-kammerlander transition-all duration-300 ease-in-out hover:text-green-700"
                 href="/employment"
               >
                 Employment
               </Link>
               <Link
                 onClick={() => setOpenNav(!OpenNav)}
-                className="hover:tracking-widest transition-all duration-300 ease-in-out hover:text-green-700"
+                className="hover:tracking-widest font-kammerlander transition-all duration-300 ease-in-out hover:text-green-700"
                 href="/contact"
               >
                 Contact us
               </Link>
               <Link
-                onMouseEnter={() => setOpenLocation(true)}
-                onMouseLeave={() => setOpenLocation(false)}
-                className=" transition-all  duration-300 ease-in-out hover:text-green-700"
-                href="#"
+                // onMouseEnter={() => setOpenLocation(true)}
+                // onMouseLeave={() => setOpenLocation(false)}
+                className=" hover:tracking-widest font-kammerlander transition-all duration-300 ease-in-out hover:text-green-700"
+                href="#locations"
               >
                 <span>Make Appointment</span>
              

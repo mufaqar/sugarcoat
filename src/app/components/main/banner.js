@@ -23,8 +23,8 @@ export default function Banner({ image, title, sub_title }) {
         </p>
         <button
           className="relative mb-10 mt-5"
-          onMouseEnter={() => setOpen(true)}
-          onMouseLeave={() => setOpen(false)}
+          // onMouseEnter={() => setOpen(true)}
+          // onMouseLeave={() => setOpen(false)}
         >
           <span className="md:text-lg text-xs px-5 font-montserrat py-2 text-black bg-white hover:bg-black hover:text-white">
             <a href="#locations">BOOK AN APPOINTMENT</a>

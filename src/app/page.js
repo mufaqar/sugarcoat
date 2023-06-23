@@ -51,7 +51,7 @@ export default function Home() {
         sub_title="WE MAKE LIFE SWEETER"
       />
 
-      <section className="px-4 mt-40 " id="vision">
+      <section className="px-4 pt-40 bg-[#f7f6f6]" id="vision">
         <div className="flex items-center flex-col md:flex-row px-6 md:px-28 border md:py-28 py-12 gap-4 md:gap-0 border-black mx-auto container">
           <h2 className="font-kammerlander text-4xl font-light md:max-w-[400px] w-full">
             OUR VISION
@@ -73,7 +73,7 @@ export default function Home() {
             OUR LOCATIONS
           </h2>
         </div>
-        <div className="grid grid-cols-1 gap-10 px-10 mt-20 sm:grid-cols-2 lg:grid-cols-3 container mx-auto">
+        <div className="grid grid-cols-1 gap-5 px-10 mt-20 sm:grid-cols-2 lg:grid-cols-3 container mx-auto">
           {allLocation?.map((post, idx) => {
             return (
               <LocationBox post={post} key={idx} />

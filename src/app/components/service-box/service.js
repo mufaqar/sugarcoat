@@ -2,8 +2,8 @@ import React from 'react';
 
 export default function ServiceBox({ post }) {
   return (
-    <div className="w-full p-5 bg-white border border-black">
-      <div className="border border-black overflow-hidden">
+    <div className="w-full p-3 bg-white border border-gray-600">
+      <div className="border border-gray-600 overflow-hidden">
         <img
           src={post?.featuredImage?.node?.mediaItemUrl}
           alt={post?.name}
@@ -12,7 +12,7 @@ export default function ServiceBox({ post }) {
       </div>
       <div className="mt-4 text-center">
         <h5 className="font-montserrat font-medium text-sm">{post?.title}</h5>
-        <div className="mt-5 text-3xl font-semibold font-kammerlander text-gray-600">
+        <div className="mt-3 text-3xl font-normal mb-4 font-kammerlander text-gray-600">
           {post?.servicesFields?.info}
         </div>
       </div>

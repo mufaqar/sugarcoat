@@ -26,13 +26,13 @@ const ServicesComponent = () => {
   }, []);
 
   return (
-    <section id="services" className="px-4">
-      <div className="md:mt-20 mt-20 container mx-auto">
+    <section id="services" className="px-4 bg-[#f7f6f6] py-20">
+      <div className=" container mx-auto">
         <h2 className="font-kammerlander text-4xl font-light text-center">
           OUR SERVICES
         </h2>
       </div>
-      <div className="grid grid-cols-1 md:gap-y-20 gap-10 px-10 mt-20 sm:grid-cols-2 lg:grid-cols-3 container mx-auto">
+      <div className="grid grid-cols-1 md:gap-y-32 gap-16 px-10 mt-20 sm:grid-cols-2 lg:grid-cols-3 container mx-auto">
         {allServices?.map((post, idx) => {
           return <ServiceBox post={post} key={idx} />;
         })}
