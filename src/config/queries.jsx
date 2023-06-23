@@ -1,8 +1,6 @@
-
-
 export const AllServices = `
 query AllServices {
-     services(first: 1000) {
+     services(first: 1000, where: {orderby: {order: ASC, field: DATE}}) {
        nodes {
          title
          content
@@ -17,7 +15,7 @@ query AllServices {
        }
      }
    }
-`
+`;
 
 export const AllLocations = `
 query AllLocations {
@@ -37,7 +35,7 @@ query AllLocations {
        }
      }
    }
-`
+`;
 
 export const AllPress = `
 query AllPress {
@@ -52,8 +50,7 @@ query AllPress {
        }
      }
    }
-`
-
+`;
 
 export const AllProducts = `
 query AllProducts {
@@ -70,4 +67,4 @@ query AllProducts {
     }
   }
 }
-`
+`;
