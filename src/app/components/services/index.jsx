@@ -26,7 +26,7 @@ const ServicesComponent = () => {
   }, []);
 
   return (
-    <section id="services" className="px-4 bg-[#f7f6f6] py-20">
+    <section id="services" className="px-4 bg-[#f7f6f6] py-20 border-b-[1px] border-black">
       <div className=" container mx-auto">
         <h2 className="font-kammerlander text-4xl font-light text-center">
           OUR SERVICES
