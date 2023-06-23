@@ -34,7 +34,7 @@ const ServicesComponent = () => {
       </div>
       <div className="grid grid-cols-1 md:gap-y-32 gap-16 px-10 mt-20 sm:grid-cols-2 lg:grid-cols-3 container mx-auto">
         {allServices?.map((post, idx) => {
-          return <ServiceBox post={post} key={idx} />;
+          return <ServiceBox post={post} key={idx} id={idx} />;
         })}
       </div>
       
